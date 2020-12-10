@@ -1,0 +1,26 @@
+
+
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: rgba(75,100,207,0.75);  
+    height: 20%;
+}
+
+.footer a{
+    color: white;
+}
+
+h3 {
+    text-align: center;
+  }
