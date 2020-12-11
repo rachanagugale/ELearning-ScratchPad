@@ -1,0 +1,189 @@
+.sideMenu{
+  height: 100vh;
+  width: 17vw;
+  position: fixed;
+  z-index: 1;
+  top: 10vh;
+  left: 0;
+  background-color: #2F2E41;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sideMenuItem{
+  position: absolute;
+ margin-top: 3vh;
+ margin-left: 2.8vw;;
+}
+
+.sideMenu a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: whitesmoke;
+  display: block;
+  text-align:center;
+}
+
+.sideMenu a:hover {
+  color:#7269d6;
+}
+
+body{
+  background: url("asserts/topics-page/pink-wave.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-x: hidden;
+}
+
+::placeholder {
+  padding-left: 1.5em;
+  font-size: 1.3rem;
+}
+
+header{
+  background-color:#21202C;
+  position: fixed;
+  width: 100%;
+  transition: 0.6s;
+  z-index: 100;
+}
+
+.fas {
+  position:absolute; 
+  margin-top: 1.1rem;
+  font-size: 1.8em;
+  padding-left: 5px;
+  color: gray;
+}
+
+.search {
+  margin-top: -1em;
+  left: -20vw;
+}
+
+.container h1{
+  margin-left: 12.5vw;
+  padding-top: 20vh;
+}
+
+.card {
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 58%;
+  margin-left: 13.5vw;
+  height: 36%;
+  border-radius: 33px;
+  margin-top: -2vh;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+/*-----card 1 and 3-----*/
+.topic-images-left{
+  width:35%;
+  height: 100%;
+  background-color: lightblue;
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  position: absolute;
+}
+
+.topic-images-left img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.15rem;  
+  height: 100%;
+} 
+
+.body-right h4{
+  position: absolute;
+  margin-top: 0.4rem;
+  margin-left: 21vw;
+  
+}
+
+.body-right p{
+  position: absolute;
+  font-size:1;
+  margin-top: 2.7rem;
+  margin-left: 21vw;
+  padding-right: 1rem;
+}
+/*-----card 1 and 3 ends-----*/
+
+/*-----card 2 and 4-----*/
+
+
+.body-left h4{
+  width:57%;
+  position: absolute;
+  margin-top: 0.4rem;
+}
+
+.body-left p{
+  width:57%;
+  position: absolute;
+  font-size:1;
+  margin-top: 2.7rem;
+  padding-right: 1rem;
+  
+}
+
+.topic-images-right{
+    width:35%;
+    height: 100%;
+    background-color: lightblue;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+.topic-images-right img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.15rem;  
+  height: 100%;
+  
+} 
+/*-----card 2 and 4 ends-----*/
+
+.start_button{
+  margin-top: 18vh;
+  margin-right:1.5vw; 
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.impPoint_button, .samplequs_button{
+border-color:#2F2E41;
+}
+
+
+.bubble{
+  width:30%;
+  float:right;
+  margin-right:-20vw;
+  margin-top:-20vh;
+}
+
+.sideMenuOpen{
+  color: whitesmoke;
+  margin-top: 3vh;
+  margin-left: 2vw;
+}
+
+
+
+
+
+
+
