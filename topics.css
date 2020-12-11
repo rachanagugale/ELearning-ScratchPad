@@ -66,6 +66,15 @@ header{
   padding-top: 20vh;
 }
 
+
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 43vh;
+  border:none;
+}
+
 .card {
   position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
