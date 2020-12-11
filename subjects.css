@@ -1,0 +1,129 @@
+.card{
+	width: 210px;
+	height: 220px;
+	margin-left: 150px;
+	background-color: #FAC7C2;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px grey;
+	opacity: 1;
+}
+
+.img{
+	width: 80px;
+	height: 90px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.column{
+  float: left;
+  width: 20%;
+  padding: 10 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.row {margin-left: 0 -10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-body{
+	background-color: #4B64CF;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	opacity: 0.90;
+	margin-bottom: -5px;
+}
+
+.card-title{
+	color: white;
+	font-weight: bold;
+}
+
+.card-text{
+	color: white;
+	font-weight: bold;
+}
+
+.card-img-top{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	padding: 20px;
+}
+
+.card-holder{
+	left: 30px;
+	margin-left: 20px;
+	margin-top: -50px;
+}
+#Subjects_Page {
+	position: absolute;
+	background-color: rgba(247,249,253,1);
+	overflow: hidden;
+	--web-view-name: Subjects Page;
+	--web-view-id: Subjects_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+
+
+#subjects-title {
+	left: 180px;
+	top: 70px;
+	position: absolute;
+	overflow: visible;
+	width: 179px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: rgba(34,37,44,1);
+}
+
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.corner-purple-blob{
+	margin-left: 0px;
+	width: 200px;
+	height: 180px;
+}
+
+.corner-pink-blob{
+	width: 180px;
+	height: 160px;
+	margin-left: 930px;
+}
