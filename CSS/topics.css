@@ -95,7 +95,7 @@ header{
 .topic-images-left{
   width:35%;
   height: 100%;
-  background-color: lightblue;
+  background-color: #2F2E41;
   border-top-left-radius: 33px;
   border-bottom-left-radius: 33px;
   position: absolute;
@@ -107,8 +107,13 @@ header{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.15rem;  
-  height: 100%;
+  margin-top: 15px;  
+  margin-bottom: 15px;
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  height: 90%;
+  width: 90%;
+  
 } 
 
 .body-right h4{
@@ -148,9 +153,10 @@ header{
 .topic-images-right{
     width:35%;
     height: 100%;
-    background-color: lightblue;
+    background-color: #2F2E41;
     border-top-right-radius: 33px;
     border-bottom-right-radius: 33px;
+    
 }
 
 .topic-images-right img{
@@ -159,9 +165,12 @@ header{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.15rem;  
-  height: 100%;
-  
+  margin-top: 15px;  
+  margin-bottom: 15px;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+  height: 90%;
+  width: 90%;
 } 
 /*-----card 2 and 4 ends-----*/
 
