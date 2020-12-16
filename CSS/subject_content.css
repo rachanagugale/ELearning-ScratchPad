@@ -10,26 +10,27 @@ a:hover{
 	display: flex;
 	text-decoration: none;
 }
-.footer{
+/*.footer{
 	position: bottom;
 	margin-left: 90%;
 	width:100 ;
 	height:12;
 	right:0;
 	min-width: 800px;
-}
-.row-content{
+}*/
+
+/*.row-content{
     margin: 0px auto;
-   /* padding: 50px 0px 50px 0px;*/
+    padding: 50px 0px 50px 0px;
     min-height: 100px;
 
-}
+}*/
 #in-this-article-navbar {
 	position: absolute;
-	width: 200px;
-	height:370px;
-	left:200px;
-	top: 124px;
+	/*width: 20vw;
+	height:37vh;*/
+	left:13vw;
+	top: 16.3vh;
 	overflow: visible;
 }
 #rect {
@@ -39,108 +40,108 @@ a:hover{
 	filter: drop-shadow(2px 2px 6px rgba(47, 46, 65, 1));
 	position: absolute;
 	overflow: visible;
-	width: 300px;
-	height: 388px;
+	width: 30vw;
+	height: 48vh;
 	left: 0px;
 	top: 0px;
 }
 
-#pink-blob{
+/*#pink-blob{
 	position: absolute;
 	width:29px;
 	height:270px;
 	left:10px;
 	top: 900px;
 	overflow: visible;
-}
+}*/
 #-_What_is_a_chemical_reaction {
-	left: 35px;
-	top: 96px;
+	left: 2.3vw;
+	top: 13vh;
 	position: absolute;
 	overflow: visible;
-	width: 270px;
+	width: 8.85vw;
 	white-space: nowrap;
-	line-height: 35px;
+	line-height: 3.5vh;
 	margin-top: -7.5px;
 	text-align: left;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: rgba(75,100,207,1);
-	letter-spacing: -0.1px;
+	letter-spacing: -0.00625em;
 	text-decoration: underline;
 }
 #-_What_is_a_chemical_equation_ {
-	left: 35px;
-	top: 133px;
+	left: 2.3vw;
+	top: 18vh;
 	position: absolute;
 	overflow: visible;
-	width: 277px;
+	width: 8.85vw;
 	white-space: nowrap;
-	line-height: 35px;
+	line-height: 3.5vh;
 	margin-top: -7.5px;
 	text-align: left;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: rgba(75,100,207,1);
-	letter-spacing: -0.1px;
+	letter-spacing: -0.00625em;
 	text-decoration: underline;
 }
 #-_Important_Points {
-	left: 35px;
-	top: 170px;
+	left: 2.3vw;
+	top: 22.5vh;
 	position: absolute;
 	overflow: visible;
-	width: 167px;
+	width: 8.85vw;
 	white-space: nowrap;
-	line-height: 35px;
+	line-height: 3.5vh;
 	margin-top: -7.5px;
 	text-align: left;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: rgba(75,100,207,1);
-	letter-spacing: -0.1px;
+	letter-spacing: -0.00625em;
 	text-decoration: underline;
 }
 #-_Previous_Years_Questions {
-	left: 35px;
-	top: 207px;
+	left: 2.3vw;
+	top: 27vh;
 	position: absolute;
 	overflow: visible;
-	width: 249px;
+	width: 8.85vw;
 	white-space: nowrap;
-	line-height: 35px;
+	line-height: 3.5vh;
 	margin-top: -7.5px;
 	text-align: left;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: rgba(75,100,207,1);
-	letter-spacing: -0.1px;
+	letter-spacing: -0.00625em;
 	text-decoration: underline;
 }
 #In_this_article {
-	left: 43px;
-	top: 42px;
+	left: 2.8vw;
+	top: 5.57vh;
 	position: absolute;
 	overflow: visible;
-	width: 136px;
+	width: 8.85vw;
 	white-space: nowrap;
-	line-height: 35px;
+	line-height:  4.6vh;
 	margin-top: -6.5px;
 	text-align: left;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 1.375rem;
 	color: rgba(47,46,65,1);
-	letter-spacing: -0.1px;
+	letter-spacing: -0.00625em;
 }
 
 .sideMenu{
