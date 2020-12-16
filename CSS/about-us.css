@@ -1,227 +1,85 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-#decorative-svgs {
-	position: absolute;
-	width: 100%;
-	height: 1080.301px;
-	left: -1px;
-	top: 0px;
-	overflow: visible;
-}
-#pink-wave {
-	fill: rgba(243, 185, 180, 0.239);
-}
-.pink-wave {
-	overflow: visible;
-	position: absolute;
-	width: 1000%;
-	height: 742.477px;
-	left: 0px;
-	width: 2000px;
-	top: 337.824px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#big-pink-blob {
-	fill: rgba(248, 176, 169, 0.549);
-	fill-opacity: 0.8;
-}
-.big-pink-blob {
-	overflow: visible;
-	position: absolute;
-	width: 355.06px;
-	height: 331.625px;
-	left: 1875.94px;
-	top: 76px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#small-pink-blob {
-	fill: rgba(250, 234, 232, 0.29);
-	fill-opacity: 0.5;
-	stroke: rgba(255,255,255,1);
-	stroke-width: 3px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.small-pink-blob {
-	overflow: visible;
+body{
+	background: url("/assets/topics-page/pink-wave.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: max-content;
+	overflow-x: hidden;
+	background-position-y: 31vh;
+  }
+
+  .About-Us {
 	position: relative;
-	width: 231.275px;
-	height: 211.027px;
-	left: 1928.94px;
-	top: 155.598px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#purple-top-left-blob {
-	fill: rgba(119,138,218,1);
-}
-.purple-top-left-blob {
-	overflow: visible;
-	position: absolute;
-	width: 189.656px;
-	height: 149.978px;
-	left: 0.37px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#about-us-box {
-	position: fixed;
-	width: 700px;
-	height: 290px;
-	left: 300px;
-	top: 238px;
-	overflow: visible;
-	border-radius: 2px;
-	z-index: 2;
+	height: fit-content;
+	margin-left: 19vw;
+	top: 25vh;
 }
 #main-title {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 190px;
+	font-size: 2rem;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 54px;
-	color: rgb(49, 46, 114);
+	color: black;
 	letter-spacing: -0.1px;
 }
+
 #main-subtitle {
-	left: 0px;
-	top: 88px;
-	position: absolute;
-	overflow: visible;
-	width: 526px;
+	max-width: 1em;
+	top: 9vh;
 	white-space: nowrap;
-	line-height: 35px;
-	margin-top: -7.5px;
-	text-align: left;
+	text-align: justify;
 	font-family: Open Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 28px;
+	font-size: 1rem;
 	color: rgba(47,46,65,1);
-	letter-spacing: -0.1px;
 }
-#get-in-touch-bubble {
+
+.contact{
+	position: relative;
+	text-align: center;
+}
+
+.side-blob {
 	position: absolute;
-	width: 712.02px;
-	height: 467.175px;
-	left: 1490.235px;
-	top: 400.392px;
-	overflow: visible;
+	top: 0;
+	right: 0;
 }
-#purple-blob {
-	fill: rgba(119,138,218,1);
-}
-.purple-blob {
-	overflow: visible;
+
+.get-in-touch-bubble {
 	position: absolute;
-	width: 702.441px;
-	height: 555px;
-	transform: translate(-1117.235px, -367.392px) matrix(1,0,0,1,1122.0252,373.4798) rotate(-1deg);
-	transform-origin: center;
-	left: 0px;
-    top: 0px;
+	margin-top:-4vh;
+	float: right;
+	margin-right: -5vw;
+	right: 0;
 }
-#__Write_to_us_at_persistent_ac {
-	left: 221.765px;
-	top: 50.608px;
+ 
+.fab, .contact h2, .contact p, .contact h6 {
+	color: whitesmoke;
+}
+
+.Get-in-touch {
 	position: absolute;
-	overflow: visible;
-	width: 329px;
-	white-space: nowrap;
+	margin-top: 20vh;
+	right: 0vw;
+} 
+
+.write-to-us {
+	position: absolute;
 	text-align: left;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 42px;
-	color: rgba(247,249,253,1);
-	letter-spacing: -0.1px;
+	font-size: 1rem;
+	width: 17em;
 }
-.writetous a:link {
-    color: rgb(241, 241, 241);
-    background-color: transparent;
-    text-decoration: none;
-  }
-.writetous a:visited {
-    color: rgb(241, 241, 241);
-    background-color: transparent;
-    font-size: inherit;
-    text-decoration: none;
-  }
-  .writetous a:hover {
-    color:  black;
-    background-color: transparent;
-    font-size:30px;
-    text-decoration: bold;
-  }
-#Get_in_touch_with_us {
-	left: 212.765px;
-	top: 100.608px;
+
+.social-media-text {
 	position: absolute;
-	overflow: visible;
-	width: 402px;
-	height: 55px;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 40px;
-	color: rgb(253, 250, 247);
+	padding-top: 3em;
+	text-align: justify;
 }
-.social-media{
-	display:flex;
-	justify-content:center;
+
+.social-media-text a {
+	padding-left: -10vw;
 }
-.social-media a{
-	flex-direction: row;
-	display:flex;
-	background:#e3edf7;
-	height: 75px;
-	width: 75px;
-	margin: 0 15px;
-	border-radius: 8px;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-				-6px -6px 10px -1px rgba(255,255,255,0.7);
-	border: 1px sloid rgba(0,0,0,0);
-	transition: transform 0.5s;
-}
-.social-media a i{
-	  font-size: 35px;
-	  color:#777;
-    }
-.social-media a:hover{
-	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-				inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-				-0.5 -0.5px 0px rgba(255,255.255,1),
-				0.5px 0.5px 0px rgba(0,0,0,0.15),
-				0px 12px 10px -10px rgba(0,0,0,0.05);
-	border: 1px sloid rgba(0,0,0,0.01);
-	transform: translateY(2px);
-}
-.social-media a:hover i{
-	transform: scale(0.90);
-}
-.fa-facebook:hover{
-	color:#3b5998;
-}
-.fa-twitter:hover{
-	color:#00acee;
-}
-.fa-instagram:hover{
-	color:#f14843;
-}
+
+.write-to-us a:link{ color: whitesmoke; }
+
+.write-to-us a:hover{ color: blueviolet; }
 
 .row-header{
     margin: 0px auto;
@@ -235,7 +93,6 @@
 }
 
 .footer{
-	position: fixed;
 	bottom: 0;
 	padding: 2px;
 	right: 0;
@@ -243,18 +100,24 @@
 	width: 100%;
 	color: white;
     background-color: rgba(75,100,207,0.75);  
-	height: 100px;
+	height: 25vh;
 	text-align: right;
 }
+
 
 .footer a{
     color: white;
 }
 
-h3,p {
-    text-align: center;
-  }
-
-.img{
-    text-align: right;
+.corner-purple-blob{
+	float:left;
+	z-index: 1000;
+	position: absolute;
 }
+
+.footer {
+	bottom: 0 !important;
+	margin-top: 78vh !important;
+	height: 5rem;
+}
+
