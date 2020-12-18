@@ -104,7 +104,7 @@
 				</div>
 
 				<div class=" col-sm-3" style="top: -1.5vh; left: -47vw;">
-					<img src="/assets/header/Logo.svg">
+					<img src="/assets/footer/footer-pink-logo.svg">
 				</div>
 
 				<div class="col-sm-2">
@@ -120,6 +120,15 @@
 				</div>
 			</div>
 		</div>
-	</footer>	  
+	</footer>	
+	<script type="text/javascript">
+		$(function () {
+			$(document).scroll(function () {
+				let $nav = $(".navbar");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+			});
+		});
+	</script>  
 </body>
 </html>
