@@ -7,6 +7,12 @@ body{
 	background-position-y: 31vh;
   }
 
+  .navbar.scrolled {
+	/* background-color: rgba(127, 9, 223, 0.95) !important; */
+     background-color: rgb(250,218,221)  !important;
+	transition: background-color 200ms linear;
+}
+
   .About-Us {
 	position: relative;
 	height: fit-content;

@@ -20,6 +20,10 @@ header{
 	background-color: white;
   }
 
+  header.sticky{
+	  background: lightcoral !important;
+  }
+
   .fas {
 	position:absolute; 
 	margin-top: 1.1rem;
@@ -28,17 +32,21 @@ header{
 	color: gray;
   }
   
-  .search { margin-top: -0.9em; }
-  
-  .search-input {
+.search { margin-top: -0.9em; }
+
+.search-input {
 	background-color: rgba(128, 128, 128, 0.212);
 	height: 2em;
 	padding-left: 2em;
-  }
+}
   
-  .nav-link{ color: #21202C; }
-  .nav-link:hover { color: #2211db; }
- 
+.nav-link{ color: #21202C; }
+.nav-link:hover { color: #2211db; }
+
+.navbar.scrolled {
+    background-color: rgb(250,218,221)  !important;
+	transition: background-color 200ms linear;
+}
 
 .footer{
     background-color: rgba(75,100,207,0.75);  
