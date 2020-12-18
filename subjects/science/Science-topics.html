@@ -9,28 +9,32 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
         <script src="https://kit.fontawesome.com/10f639e47e.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/CSS/topics.css">
     </head>
 
     <body>
         <!--Navbar starts-->
         <header>
-            <nav class="navbar fixed-top justify-content-lg-around navbar-dark bg-dark navbar-expand-lg">
-                <img class="logo" src="/assets/header/pink-logo.svg">
+            <nav class="navbar navbar-inverse fixed-top justify-content-lg-around navbar-expand-lg">
+                <img class="logo"src="/assets/header/Logo.svg" style="margin-left: 3vw;">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item col-12 col-sm-6 search">
                         <div class="form-group has-feedback">
-                            <label class="control-label" for="inputSuccess2">
+                            <label class="control-label" for="searchInput">
                                 <i class="fas fa-search"></i>
                             </label>
-                            <input type="text" class="form-control searchInput" placeholder="     Search" id="inputSuccess2"/>
+                            <input type="text" class="form-control search-input" 
+                            placeholder="Search" id="searchInput"/>
                             <span class="glyphicon glyphicon-search form-control-feedback"></span>
                         </div>
                     </li>
-                     <li class="nav-item col-12 col-sm-2 subject mt-2 mr-1">
+                     <li class="nav-item col-12 col-sm-2 subject mt-1 mr-1">
                          <a class="nav-link" href="#">Subjects</a>
                     </li>
-                    <li class="nav-item col-12 about-us mt-2">
+                    <li class="nav-item col-12 about-us mt-1">
                         <a class="nav-link" href="#">About Us</a>
                     </li> 
                 </ul>
@@ -40,21 +44,22 @@
         <!--Navbar ends-->
 
         <!--side menu start-->
-        <div class="sideMenu">
+        <div class="sideMenu" style="top:0; margin-top:0;">
+            <h1 class="text-center"><U><B>Subjects</B></U></h1>
             <div class="sideMenuItem">
-                <a href="#" class="active">Science</a>
+                <a class="text-center" href="#" class="active">Science</a>
                 <br>
-                <a href="">Maths</a>
+                <a class="text-center" href="">Maths</a>
                 <br>
-                <a href="#t">History</a>
+                <a class="text-center" href="#t">History</a>
                 <br>
-                <a href="#">Geography</a>
+                <a class="text-center" href="#">Geography</a>
                 <br>
-                <a href="#">English</a>
+                <a class="text-center" href="#">English</a>
                 <br>
-                <a href="#">Civics</a>
+                <a class="text-center" href="#">Civics</a>
                 <br>
-                <a href="">IT</a>
+                <a class="text-center" href="">IT</a>
             </div>
         </div>
         <!--side menu end-->
@@ -62,14 +67,14 @@
         <!--cards start-->
         <div class="container">
             <div class="col-15 col-sm-3 heading">
-                <h1>Science</h1>
+                <h1 class="text-right"><B>Science</B></h1>
             </div>
              <!--card1-->
             <div class="row row-content align-items-center">
                 <div class="card bg-white">
                     <div class="card-horizontal">                       
                         <div class= topic-images-left>
-                            <img src="/assets/topics-page/subjects/science/chemical-reaction.svg" alt="chemmical reactions">   
+                            <img src="/assets/topics-page/subjects/science/chemical-reaction.svg" alt="chemical reactions">   
                         </div>
                         <div class="card-body body-right">
                             <div class="text-right">
@@ -283,13 +288,16 @@
                 </div>  
             </div>  
             <!--card8 ends-->
-
-
         </div>
         <!--cards end-->
+        <script type="text/javascript">
+            $(function () {
+                $(document).scroll(function () {
+                    let $nav = $(".navbar");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                });
+            });
+        </script>
     </body>    
 </html>
