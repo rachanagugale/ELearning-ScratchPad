@@ -360,12 +360,15 @@ header nav .navbar-link a:hover {
 
 .card-left .card-content .start-btn {
   font-size: 1vw;
-  height: 2.5rem;
-  width: 6rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: absolute;
   background-color: #21202C;
   color: white;
-  border: none;
   top: 75%;
   margin-right: 3vw;
   font-weight: normal;
@@ -373,6 +376,8 @@ header nav .navbar-link a:hover {
   border-radius: 0.3rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
 }
 
 .card-left .card-content .start-btn:hover {
@@ -481,11 +486,14 @@ header nav .navbar-link a:hover {
 
 .card-right .card-content .start-btn {
   font-size: 1vw;
-  height: 2.5rem;
-  width: 6rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #21202C;
   color: white;
-  border: none;
   position: absolute;
   top: 75%;
   margin-right: 3vw;
@@ -494,6 +502,8 @@ header nav .navbar-link a:hover {
   border-radius: 0.3rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
 }
 
 .card-right .card-content .start-btn:hover {

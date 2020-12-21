@@ -301,18 +301,19 @@ header {
         .start-btn {
             // font-size: 1rem;
             font-size: 1vw;
-            height: 2.5rem;
-            width: 6rem;
+            height: fit-content;
+            width: fit-content;
             position: absolute;
             background-color: color('dark-blue-violet');
             color: white;
-            border: none;
             top: 75%;
             margin-right: 3vw;
             font-weight: normal;
             letter-spacing: 0.05rem;
             border-radius: 0.3rem;
             align-self: flex-end;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
         }
 
         .start-btn:hover {
@@ -401,11 +402,10 @@ header {
         .start-btn {
             // font-size: 1rem;
             font-size: 1vw;
-            height: 2.5rem;
-            width: 6rem;
+            height: fit-content;
+            width: fit-content;
             background-color: color('dark-blue-violet');
             color: white;
-            border: none;
             position: absolute;
             top: 75%;
             margin-right: 3vw;
@@ -413,6 +413,8 @@ header {
             letter-spacing: 0.05rem;
             border-radius: 0.3rem;
             align-self: flex-end;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
         }
 
         .start-btn:hover {
