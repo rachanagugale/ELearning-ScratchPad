@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development</title>
+	<link rel="stylesheet" href="../../css/article.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="top-container">
+		<div class="side-menu-title">Economics</div>
+		<header>
+			<div class="logo-container">
+				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
+			</div>
+			<nav>
+				<div class="search-box">
+					<input class="search-rect" type="text" placeholder="Search">
+					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+				</div>
+				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+			</nav>
+		</header>	
+	</div>
+    
+
+    <div class="middle-container">
+		<aside class="side-menu">
+            
+            <div class="chapter-link-container current-chapter"><a href="#" style="color: #778ada;"><div class="chapter-num">Chapter 1</div>Development</a></div>
+            <div class="chapter-link-container"><a href="02-sectors-of-indian-economy.html"><div class="chapter-num">Chapter 2</div>Sectors Of The<br> Indian Economy</a></div>
+            <div class="chapter-link-container"><a href="03-money-and-credit.html"><div class="chapter-num">Chapter 3</div>Money And Credit</a></div>
+            <div class="chapter-link-container"><a href="04-globalization-and-indian-economy.html"><div class="chapter-num">Chapter 4</div>Globalisation And <br>The Indian Economy</a></div>
+            <div class="chapter-link-container"><a href="05-consumer-rights.html"><div class="chapter-num">Chapter 5</div>Consumer Rights</a></div>
+		</aside>
+
+		<div class="main-content">
+			<div class="container">
+				<div class="pdf-container">
+					<iframe src="../../textbooks\economics\chapter01.pdf" style="width: 50vw;height:90vh"></iframe>
+				</div>
+				<div class="in-this-topic-card">
+					<h2>In this article: </h2>
+					<ol> 
+						<li>
+							In the PDF:
+							<ol class="sub-list">
+								<li>What Development Promises</li>
+								<li>Income and Other Goals</li>
+								<li>How to Compare Different Countries or States?</li>
+								<li>Income and Other Criteria</li>
+								<li>Public Facilities</li>
+								<li>Sustainability of Development</li>
+
+							</ol>
+						</li>
+						<li><a href="#imp-points">Important Points</a></li>
+						<li><a href="#external-resources">External Resources</a></li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="bottom-container">
+				<div id="imp-points" class="imp-points">
+					<h1>Important Points</h1>
+					<ul>
+						<li><b>Development:</b> A comprehensive term that includes increase in per capita income, reduction of poverty, increase in literacy rate, etc.</li>
+						<li><b>Economic development:</b> A term that refers to all round development of a country. A country has a developed economy if its people earn higher income and are able to satisfy most of their desires.</li> 
+						<li><b>Per capita income:</b> Total income of a country divided by its total population. It is also called average income.</li>
+						<li><b>Human development:</b> Development of an individual as per his/her mental and physical abilities.</li>
+						<li><b>National income:</b> The total value of all the goods and services produced within a country plus the net income from abroad during a year.</li>
+						<li><b>Developed country:</b> A country that possesses the characteristics of higher standard of living of the people, fuller utilization of resources and a modern technology.</li>
+						<li><b>Renewable resources:</b> Resources that are replenished by nature</li>
+						<li><b>Non-renewable resources:</b> Resources that are not replenished by nature and get exhausted after years of use.</li>
+						<li><b>Sustainability:</b> The regular process without harming the productivity of future generations and satisfies the needs of the present generation.</li>
+
+					</ul>
+					
+				</div>
+				<div id="external-resources" class="external-resources">
+					<h1>External Resources</h1>
+					<ul>
+						<li><a href="https://www.learncbse.in/ncert-solutions-class-10th-social-economics-chapter-1-understanding-economic-development/">Learn CBSE</a></li>
+						<li><a href="https://byjus.com/cbse-notes/class-10-social-science-economics-chapter-1-development/">BYJUS - Notes</a></li>
+						<li><a href="https://www.studyrankers.com/2017/05/notes-of-ch-1-development-class-10th-economics.html">Study Rankers - Notes</a></li>
+						<li><a href="https://www.youtube.com/watch?v=6fNtmvmQDAw">Development</a></li>
+						<li> <a href="https://www.youtube.com/watch?v=zo-VF8zH9eM"> Development (Examrace - Dr. Manishika) | English | CBSE</a></li>
+						<li> <a href="https://www.youtube.com/watch?v=AETh2cSjtNQ&list=PLVLoWQFkZbhX22dF_WChTi0DwqydFsrFX"> Introduction to Development | Economics | Class 10th | Magnet Brains</a></li>
+						<li> <a href="https://www.youtube.com/watch?v=j8DFeq0-ksU"> Discussing The Chapter 1 Development | Ncert Tutorial</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<script type = "text/javascript" >
+		window.addEventListener('DOMContentLoaded', (event) => {
+			jQuery('header').css("background-color", "#F7F9FD");
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 0) {
+					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+				} else {
+					jQuery('header').css("box-shadow", "none");   
+				}
+			});
+		}); 
+	</script>
+</body>
+</html>
