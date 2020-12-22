@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Presentation(Intermediate)</title>
+	<link rel="stylesheet" href="../../css/article.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="top-container">
+		<div class="side-menu-title">IT</div>
+		<header>
+			<div class="logo-container">
+				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
+			</div>
+			<nav>
+				<div class="search-box">
+					<input class="search-rect" type="text" placeholder="Search">
+					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+				</div>
+				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+			</nav>
+		</header>	
+	</div>
+    
+
+    <div class="middle-container">
+		<aside class="side-menu">
+            
+            <div class="chapter-link-container"><a href="01-functional-english.html"><div class="chapter-num">Chapter 1</div>Functional English<br> (Intermediate) </a></div>
+            <div class="chapter-link-container"><a href="02-web-applications.html"><div class="chapter-num">Chapter 2</div>Web Applications<br> (Basic) </a></div>
+            <div class="chapter-link-container "><a href="03-word-processing.html"><div class="chapter-num">Chapter 3</div>Word Processing <br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="04-spread-sheet.html"><div class="chapter-num">Chapter 4</div>Spreadsheet<br> (Intermediate)</a></div>
+            <div class="chapter-link-container current-chapter"><a href="05-digital-presentation.html" style="color: #778ada;"><div class="chapter-num">Chapter 5</div>Digital Presentation<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="06-email.html"><div class="chapter-num">Chapter 6</div>Email Messaging<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="07-database-development.html"><div class="chapter-num">Chapter 7</div>Database Development<br> (Basic) </a></div>
+		</aside>
+
+		<div class="main-content">
+			<div class="container">
+				<div class="pdf-container">
+					<iframe src="../../textbooks/IT/chapter05.pdf" style="width: 50vw;height:90vh"></iframe>
+				</div>
+				<div class="in-this-topic-card">
+					<h2>In this article: </h2>
+					<ol> 
+						<li>
+							In the PDF:
+							<ol class="sub-list">
+								<li>Inserting A Movie Clip</li>
+								<li>Inserting An Audio Clip</li>
+								<li>Working With Tables</li>
+								<li>Working With Charts</li>
+								<li>Inserting Transitions</li>
+								<li>Inserting Animations</li>
+								<li>Grouping Objects</li>
+								<li>Inserting Speaker Notes</li>
+								<li>Reviewing Content</li>
+								<li>Preparing To Deliver A Presentation</li>
+								<li>Print A Presentation</li>
+							</ol>
+						</li>
+						<li><a href="#imp-points">Important Points</a></li>
+						<li><a href="#external-resources">External Resources</a></li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="bottom-container">
+				<div id="imp-points" class="imp-points">
+					<h1>Important Points</h1>
+					<ul>
+						<p><strong><span lang="EN-US">Slide Transition:</span></strong></p>
+						<p>&nbsp;It is the visual motion when one slide changes to next during a presentation</p>
+						<p>&nbsp;</p>
+						<p><strong>Animation:</strong></p>
+						<p>It allows to put the text and graphics, in motion within a slide.</p>
+						<p>&nbsp;</p>
+						<p><strong>Speaker notes:</strong></p>
+						<p>These are guided text used by the presenter during a presentation.</p>
+						<p>&nbsp;</p>
+						<p><strong>Tips to make an effective presentation:</strong></p>
+						<ul>
+						<li>Know your topic</li>
+						<li>Use Key phrases about your topic</li>
+						<li>Avoid too much text on each</li>
+						<li>Limit number of</li>
+						<li>Plan the Layout of your slide.</li>
+						<li>limit number of</li>
+						<li>Use contrasting colors for text and</li>
+						<li>Use a slide design template to keep you presentation look</li>
+						<li>Use animation and transitions</li>
+						<li>Always review Presentation 2-3 times before making a presentation</li>
+						</ul>
+						<p>&nbsp;</p>
+						<p><strong>&nbsp;Kiosk:</strong></p>
+						<p>&nbsp;It is computer terminal for specialized hardware and software designed within a public exhibit providing access to information and application for communication, commerce etc.</p>
+					</ul>
+					
+				</div>
+				<div id="external-resources" class="external-resources">
+					<h1>External Resources</h1>
+					<ul>
+						<li><a href="https://m.youtube.com/watch?v=mrDtaeLB7jw">Digital presentation Part-1</a></li>
+						<li><a href="https://m.youtube.com/watch?v=4nM2tdsb3yM">Digital presentation Part-2</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<script type = "text/javascript" >
+		window.addEventListener('DOMContentLoaded', (event) => {
+			jQuery('header').css("background-color", "#F7F9FD");
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 0) {
+					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+				} else {
+					jQuery('header').css("box-shadow", "none");   
+				}
+			});
+		}); 
+	</script>
+</body>
+</html>

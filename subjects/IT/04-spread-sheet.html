@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet(Intermediate)</title>
+	<link rel="stylesheet" href="../../css/article.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="top-container">
+		<div class="side-menu-title">IT</div>
+		<header>
+			<div class="logo-container">
+				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
+			</div>
+			<nav>
+				<div class="search-box">
+					<input class="search-rect" type="text" placeholder="Search">
+					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+				</div>
+				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+			</nav>
+		</header>	
+	</div>
+    
+
+    <div class="middle-container">
+		<aside class="side-menu">
+            
+            <div class="chapter-link-container"><a href="01-functional-english.html" ><div class="chapter-num">Chapter 1</div>Functional English<br> (Intermediate) </a></div>
+            <div class="chapter-link-container"><a href="02-web-applications.html"><div class="chapter-num">Chapter 2</div>Web Applications<br> (Basic) </a></div>
+            <div class="chapter-link-container "><a href="03-word-processing.html"><div class="chapter-num">Chapter 3</div>Word Processing <br> (Intermediate)</a></div>
+            <div class="chapter-link-container current-chapter" ><a href="04-spread-sheet.html"  style="color: #778ada;"><div class="chapter-num">Chapter 4</div>Spreadsheet<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="05-digital-presentation.html"><div class="chapter-num">Chapter 5</div>Digital Presentation<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="06-email.html"><div class="chapter-num">Chapter 6</div>Email Messaging<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="07-database-development.html"><div class="chapter-num">Chapter 7</div>Database Development<br> (Basic) </a></div>
+		</aside>
+
+		<div class="main-content">
+			<div class="container">
+				<div class="pdf-container">
+					<iframe src="../../textbooks/IT/chapter04.pdf" style="width: 50vw;height:90vh"></iframe>
+				</div>
+				<div class="in-this-topic-card">
+					<h2>In this article: </h2>
+					<ol> 
+						<li>
+							In the PDF:
+							<ol class="sub-list">
+								<li>Use Autosum In Cells </li>
+								<li>Conditional Formatting</li>
+								<li>Hide / Unhide / Freeze Rows And Columns</li>
+								<li>Set Page Breaks</li>
+								<li>Set Page Layout</li>
+								<li>Manage Workbook Views</li>
+								<li>Apply Cell And Range Names </li>
+								<li>Create Modify And Format Charts</li>
+								<li>Sort And Filter Data</li>
+								<li>Calculate Data Across Worksheets</li>
+								<li>Using Multiple Workbooks And Linking Cells</li>
+								<li>Sharing Worksheet Data</li>
+							</ol>
+						</li>
+						<li><a href="#imp-points">Important Points</a></li>
+						<li><a href="#external-resources">External Resources</a></li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="bottom-container">
+				<div id="imp-points" class="imp-points">
+					<h1>Important Points</h1>
+					<ul><p><strong><span lang="EN-US">Autosum:</span></strong></p>
+					<p><span lang="EN-US">Autosum is used for adding the values given in cells automatically without writing the formula to perform the operation.</span></p>
+					<p>&nbsp;</p>
+					<p><strong>Workbook views:</strong></p>
+					<p><span style="text-decoration: underline;">Normal View:</span> The default view of the spreadsheet application is the Normal. It&rsquo;s a collection of cells arranged in the work area.&nbsp;</p>
+					<p><span style="text-decoration: underline;">Page Layout:</span> You can select the Page Layout view in order to quickly fine tune a worksheet that contains many charts or huge amounts of data and achieve professional looking results.</p>
+					<p><span style="text-decoration: underline;">Page Break Preview:</span> This option is similar to the Page Layout option except you can set the area that is to be set as a page after inserting page break.</p>
+					<p><span style="text-decoration: underline;">Custom Views:</span> If you would like to view selected areas of a document , you can use the custom view option. For example, if you would like to point out certain row and column, you can add that to the Custom view.</p>
+					<p><span style="text-decoration: underline;">Full Screen:</span> Selecting this option makes the workbook cover the entire screen. All tabs are hidden from view. To get back the tabs, click on <strong><em>File</em></strong>&gt; <strong><em>Restore</em></strong>.</p>
+					<p>Additionally, in spreadsheet, you can open multiple windows that display the current spreadsheet and then arrange those windows in a variety of ways. You can also open and arrange multiple workbook windows.</p>
+					</ul>
+					
+				</div>
+				<div id="external-resources" class="external-resources">
+					<h1>External Resources</h1>
+					<ul>
+						<li><a href="https://m.youtube.com/watch?v=R4jDUD7Al7Q">Spreadsheet Part-1</a></li>
+						<li><a href="https://m.youtube.com/watch?v=qvTx8t2wpgc">Spreadsheet Part-2</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<script type = "text/javascript" >
+		window.addEventListener('DOMContentLoaded', (event) => {
+			jQuery('header').css("background-color", "#F7F9FD");
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 0) {
+					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+				} else {
+					jQuery('header').css("box-shadow", "none");   
+				}
+			});
+		}); 
+	</script>
+</body>
+</html>
