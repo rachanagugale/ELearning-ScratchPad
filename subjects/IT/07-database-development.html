@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Development (Basic)</title>
+	<link rel="stylesheet" href="../../css/article.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="top-container">
+		<div class="side-menu-title">IT</div>
+		<header>
+			<div class="logo-container">
+				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
+			</div>
+			<nav>
+				<div class="search-box">
+					<input class="search-rect" type="text" placeholder="Search">
+					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+				</div>
+				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+			</nav>
+		</header>	
+	</div>
+    
+
+    <div class="middle-container">
+		<aside class="side-menu">
+            
+            <div class="chapter-link-container"><a href="01-functional-english.html"><div class="chapter-num">Chapter 1</div>Functional English<br> (Intermediate) </a></div>
+            <div class="chapter-link-container"><a href="02-web-applications.html"><div class="chapter-num">Chapter 2</div>Web Applications<br> (Basic) </a></div>
+            <div class="chapter-link-container "><a href="03-word-processing.html"><div class="chapter-num">Chapter 3</div>Word Processing <br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="04-spread-sheet.html"><div class="chapter-num">Chapter 4</div>Spreadsheet<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="05-digital-presentation.html"><div class="chapter-num">Chapter 5</div>Digital Presentation<br> (Intermediate)</a></div>
+            <div class="chapter-link-container"><a href="06-email.html"><div class="chapter-num">Chapter 6</div>Email Messaging<br> (Intermediate)</a></div>
+            <div class="chapter-link-container current-chapter"><a href="07-database-development.html"  style="color: #778ada;"><div class="chapter-num">Chapter 7</div>Database Development<br> (Basic) </a></div>
+		</aside>
+
+		<div class="main-content">
+			<div class="container">
+				<div class="pdf-container">
+					<iframe src="../../textbooks/IT/chapter07.pdf" style="width: 50vw;height:90vh"></iframe>
+				</div>
+				<div class="in-this-topic-card">
+					<h2>In this article: </h2>
+					<ol> 
+						<li>
+							In the PDF:
+							<ol class="sub-list">
+								<li>Database Concept</li>
+								<li>Data Storage</li>
+								<li>Manipulating Data</li>
+								<li>Creating A Database Object</li>
+								<li>Creating A Table</li>
+								<li>Building Forms</li>
+								<li>Create And Manage Queries</li>
+								<li>Design Reports</li>
+							</ol>
+						</li>
+						<li><a href="#imp-points">Important Points</a></li>
+						<li><a href="#external-resources">External Resources</a></li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="bottom-container">
+				<div id="imp-points" class="imp-points">
+					<h1>Important Points</h1>
+					<ul>
+						<p><strong>Data</strong>&nbsp;:</p>
+						<p>Information in its raw form , or information that is not organized is called data.</p>
+						<p>&nbsp;</p>
+						<p><strong>Database:&nbsp;</strong></p>
+						<p>It is an organized collection of data.</p>
+						<p>&nbsp;</p>
+						<p><strong>Database Management System (DBMS)</strong>&nbsp;:</p>
+						<p>It is a software package with computer programs that controls the creation , maintenance , and use of a database. Examples of DBMS are Oracle , IBM DB2, Microsoft SQL Server , Microsoft Access, PostrgreSQL , MySQL ,FoxPro and SQLite.</p>
+						<p>&nbsp;</p>
+						<p>Data can be organized into two types:</p>
+						<ul>
+						<li>Flat File : Data is stored in a single</li>
+						<li>Relational : Data is stored in multiple tables and the tables are linked using a common</li>
+						</ul>
+						<p>&nbsp;</p>
+						<p><strong>Database Servers</strong> :</p>
+						<p>They are dedicated computers that hold the actual databases and run only the DBMS and related software.</p>
+						<p>&nbsp;</p>
+						<p><strong>RDBMS (Relational Database Management System)</strong>&nbsp;:</p>
+						<p>It is a database management system that is based on the relational model. In the relational model of a database , all data is represented in terms of tuples , grouped into relations (tables)</p>
+						<p>&nbsp;</p>
+						<p><strong>Tables :</strong></p>
+						<p>Data in a relational database management system (RDBMS) is organized in the form of tables. A table is similar to a spreadsheet where data is stored in rows and columns.</p>
+						<p>&nbsp;</p>
+						<p><strong>Row / Tuple :</strong></p>
+						<p>The horizontal subset of the table is known as Row/Table. Each row represents a record , which is a collection of data about a particular person , place or thing. Every row in the table has the same structure.</p>
+						<p>&nbsp;</p>
+						<p><strong>Column /Attribute :</strong></p>
+						<p>The vertical subset of the table is known as Column/Attribute. Each column has a unique name and the content within it must be of the same type.</p>
+						<p>&nbsp;</p>
+						<p><strong>Data types</strong>&nbsp;:</p>
+						<p>They are used to identify the type of data stored in the database. Data types can be classified into five categories</p>
+						<ul>
+						<li><span style="text-decoration: underline;">Numeric Types</span> &ndash; For storing numeric values</li>
+						</ul>
+						<p>The different types are BOOLEAN , TINYINT , SMALLINT, INTEGER , BIGINT , NUMERIC , DECIMAL , REAL , FLOAT , DOUBLE</p>
+						<ul>
+						<li><span style="text-decoration: underline;">Alphanumeric Types</span> &ndash; For storing text</li>
+						</ul>
+						<p>The different types are LONGVARCHAR , CHAR , VARCHAR , VARCHAR_IGNORECASE</p>
+						<ul>
+						<li><span style="text-decoration: underline;">Binary Types</span> - For storing data in binary</li>
+						</ul>
+						<p>The different types are LONGVARBINARY , BINARY , VARBINARY</p>
+						<ul>
+						<li><span style="text-decoration: underline;">Date time</span> - For storing date and time values</li>
+						</ul>
+						<p>&nbsp;</p>
+						<p><strong>Primary Key :</strong></p>
+						<p>It is a unique value that identifies a row in a table.</p>
+						<p>&nbsp;</p>
+						<p><strong>Foreign Key :</strong></p>
+						<p>Foreign key identifies a column or set of columns in one table that refers to a column or set of columns in another table. It is used to link two tables.</p>
+						<p>&nbsp;</p>
+						<p><strong>Data Definition Language (DDL) :</strong></p>
+						<p>They are commands that define the different structures in a database. DDL statements create , modify and remove database objects. Common DDL statements are CREATE , ALTER and DROP.</p>
+						<p>&nbsp;</p>
+						<p><strong>Data Manipulation Language (DML) :</strong></p>
+						<p>It is a language that enables users to access and manipulate data in a database. Common DML statements are SELECT , INSERT , DELETE and UPDATE.</p>
+						<p>&nbsp;</p>
+						<p><strong>SQL (Structured Query Language)</strong>&nbsp;:</p>
+						<p>It is a popular data manipulation language. This is used to retrieve and manipulate data in a relational database.</p>
+						<p>&nbsp;</p>
+						<p><strong>Forms :</strong></p>
+						<p>It provides the user a systematic way of storing information into the database. It is an interface in a user specified layout that lets users to view , enter , and change data directly in database objects such as tables. To create a form we need to select Forms option located under Database section.</p>
+						<p>&nbsp;</p>
+						<p><strong>Query</strong>&nbsp;</p>
+						<p>They are commands that are used to define the data structure and also to manipulate the data in the database.</p>
+						<p>&nbsp;</p>
+						<p><strong>SELECT Statement</strong>&nbsp;:</p>
+						<p>Retrieves zero or more rows from one or more database tables .The SELECT statement has many optional clauses.</p>
+						<ul>
+						<li>WHERE specifies which rows to retrieve</li>
+						<li>ORDER BY specifies an order in which to return the</li>
+						</ul>
+						<p>&nbsp;</p>
+						<p><strong>INSERT statement</strong>&nbsp;:</p>
+						<p>It is used to add records to a database. UPDATE statement - It is used for modifying records in a database. DELETE statement - It is used to remove records from a database. CREATE statement -&nbsp;&nbsp;&nbsp;&nbsp; It is used for creating a database or a table .</p>
+						<p>&nbsp;</p>
+						<p><strong>Report :</strong></p>
+						<p>&nbsp;It is used to generate the overall work outcome in a clear format. To create a report we need to select Reports option located under Database section.</p>
+						<p>&nbsp;</p>
+					</ul>
+					
+				</div>
+				<div id="external-resources" class="external-resources">
+					<h1>External Resources</h1>
+					<ul>
+						<li><a href="https://m.youtube.com/watch?v=VcdXUKtV_04">Database Concepts</a></li>
+						<li><a href="https://class10it.blogspot.com/2019/02/unit-7-database-development.html?m=1">Database Development Notes</a></li>
+						<li><a href="https://www.cbsetuts.com/cbse-notes-class-10-foundation-information-technology-database-concepts/">Database Concepts Notes</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<script type = "text/javascript" >
+		window.addEventListener('DOMContentLoaded', (event) => {
+			jQuery('header').css("background-color", "#F7F9FD");
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 0) {
+					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+				} else {
+					jQuery('header').css("box-shadow", "none");   
+				}
+			});
+		}); 
+	</script>
+</body>
+</html>
