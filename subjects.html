@@ -1,166 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Subjects</title>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="CSS/subjects.css">
-  <link rel="stylesheet" href="CSS/header_footer_subject.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+    <link rel="stylesheet" href="css/subjects.css">
 </head>
 <body>
-  <div>
-		<img src="/assets/landing-page/corner-purple-blob.svg" class="corner-purple-blob" style="margin-left:0; left:0;">
-	</div>
+    <div class="page-container">
+        <div class="top-container">
+            <div class="corner-purple-blob"><img src="assets/landing-page/corner-purple-blob.svg" alt=""></div>
+            <header>
+                <div class="logo-container">
+                    <a href="index.html"><img class="logo-svg" src="assets/header/Logo.svg" alt="Logo"></a>
+                </div>
+                <nav>
+                    <div class="search-box">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="navbar-link"> <a href="subjects.html">Subjects</a></div>
+                    <div class="navbar-link"><a href="about-us.html">About Us</a></div>
+                </nav>
+            </header>
+            <div class="corner-pink-blob"><img src="assets/subjects-page/corner-pink-blob.svg" alt=""></div>	
+        </div>
 
-	<!--Navbar starts-->
-	<header>
-		<nav class="navbar navbar-inverse fixed-top justify-content-lg-around navbar-expand-lg"
-		style="margin-left: 0; left: 0;">
-			<img class="logo"src="/assets/header/Logo.svg" style="margin-left: 20vw;">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item col-12 col-sm-6 search">
-					<div class="form-group has-feedback">
-						<label class="control-label" for="searchInput">
-							<i class="fas fa-search"></i>
-						</label>
-						<input type="text" class="form-control search-input" 
-						placeholder="Search" id="searchInput"/>
-						<span class="glyphicon glyphicon-search form-control-feedback"></span>
-					</div>
-				</li>
-				 <li class="nav-item col-12 col-sm-2 subject mt-1 mr-1">
-					 <a class="nav-link" href="#">Subjects</a>
-				</li>
-				<li class="nav-item col-12 about-us mt-1">
-					<a class="nav-link" href="#">About Us</a>
-				</li> 
-			</ul>
-		</nav>
-	</header>
-	<!--Navbar ends-->
-
-<div id="Subjects_Page">
-  <div class="row">
-    <div class="d-flex float-right align-content-end justify-content-end">
-      <img class="corner-pink-blob" src="assets\landing-page\corner-pink-blob.svg">
+        <div class="middle-container">
+            <div class="cards-container">
+                <div class="cards-row-1">
+                    <!-- Card 1 -->
+                    <a href="topics/science-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/science-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">Science</h2>
+                                <p class="no-of-chapters">16 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="topics/math-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/math-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">Math</h2>
+                                <p class="no-of-chapters">15 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="topics/history-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/history-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">History</h2>
+                                <p class="no-of-chapters">5 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 4 -->
+                    <a href="topics/geography-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/geography-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">Geography</h2>
+                                <p class="no-of-chapters">7 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cards-row-2">
+                    <!-- Card 5 -->
+                    <a href="topics/english-topics.html"> 
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/english-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">English</h2>
+                                <p class="no-of-chapters">11 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 6 -->
+                    <a href="topics/civics-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/civics-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">Civics</h2>
+                                <p class="no-of-chapters">8 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 7 -->
+                    <a href="topics/english-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/economics-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">Economics</h2>
+                                <p class="no-of-chapters">5 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 8 -->
+                    <a href="topics/IT-topics.html">
+                        <div class="card">
+                            <div class="card-top">
+                                <img class="subject-svg" src="assets/subjects-page/IT-icon.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <h2 class="subject-name">IT</h2>
+                                <p class="no-of-chapters">7 Chapters</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
     </div>
-  <div class="mt-5" id="subjects-title">
-    <span>Subjects</span>
-  </div>  
-
-<div class="card-holder " style="margin-top:-4vh;">  
-<div class="row">
-  <div class="column">
-    <div class="card">
-
-      <center>  <img class="img" src="assets\subjects-page\science-icon.svg"/> </center>
-    <div class="card-body">
-        <h5 class="card-title"><a href="subjects/science/Science-topics.html">Science</a></h5>
-        <p class="card-text">12 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>    
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-       <center>  <img class="img" src="assets\subjects-page\math-icon.svg"/> </center>
-    <div class="card-body">
-    <h5 class="card-title"><a href="science.html">Maths</a></h5>
-    <p class="card-text">15 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
-  
-   <div class="column">
-    <div class="card">
-       <center>  <img class="img" src="assets\subjects-page\history-icon.svg"/> </center>
-    <div class="card-body">
-       <h5 class="card-title"><a href="science.html">History</a></h5>
-    <p class="card-text">8 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
- 
-
-  <div class="column">
-    <div class="card">
-         <center>  <img class="img" src="assets\subjects-page\geography-icon.svg"/> </center>
-    <div class="card-body">
-       <h5 class="card-title"><a href="science.html">Geography</a></h5>
-    <p class="card-text">10 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-        <center>  <img class="img" src="assets\subjects-page\english-icon.svg"/> </center>
-    <div class="card-body">
-       <h5 class="card-title"><a href="science.html">English</a></h5>
-        <p class="card-text">12 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>    
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-           <center>  <img class="img" src="assets\subjects-page\civics-icon.svg"/> </center>
-    <div class="card-body">
-       <h5 class="card-title"><a href="science.html">Civics</a></h5>
-    <p class="card-text">5 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
-  
-   <div class="column">
-    <div class="card">
-     <center>  <img class="img" src="assets\subjects-page\economics-icon.svg"/> </center>   
-    <div class="card-body">
-     <h5 class="card-title"><a href="science.html">Economics</a></h5>  
-    <p class="card-text">4 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
- 
-
-  <div class="column">
-    <div class="card">
-           <center>  <img class="img" src="assets\subjects-page\IT-icon.svg"/> </center>
-    <div class="card-body">
-     <h5 class="card-title"><a href="science.html">IT</a></h5>
-    <p class="card-text">7 Topics</p>
-    <!-- <a href="#" class="btn btn-primary">View Course</a> -->
-    </div>  
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-  $(function () {
-      $(document).scroll(function () {
-          let $nav = $(".navbar");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-
-      });
-  });
-</script>
 </body>
 </html>
