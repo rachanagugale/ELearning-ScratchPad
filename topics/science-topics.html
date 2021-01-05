@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science</title>
     <link rel="stylesheet" href="../css/topics.css">
+    <style>
+        df-messenger {
+         --df-messenger-button-titlebar-color: #4b64cf;
+         --df-messenger-send-icon: #4b64cf;
+         --df-messenger-user-message: #FEF3F2;
+        }   
+    </style>
 </head>
 <body>
     
@@ -281,6 +288,16 @@
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/natural-resources.svg" alt=""></div>
                 </div>
                 <!-- Card 16 ends-->
+            </div>
+
+            <div class="chatbot" style="height: 10vh; width: 35vw;">
+                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+                <df-messenger
+                intent="WELCOME"
+                chat-title="Persistent Academy Bot"
+                agent-id="81357502-e82a-46ce-b23c-41ec49676eae"
+                chat-icon="https://storage.googleapis.com/elearning-bucket/chatbot.svg"
+                language-code="en"></df-messenger>
             </div>
         </div>
     </div>
