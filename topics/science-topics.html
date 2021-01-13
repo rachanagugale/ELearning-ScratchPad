@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HL8YT0EEYR');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science</title>
@@ -15,22 +24,29 @@
 </head>
 <body>
     
-    <header>
-        <div class="logo-container">
-            <a href="../index.html"><img class="logo-svg" src="../assets/header/pink-logo.svg" alt="Logo"></a>
-        </div>
-        <nav>
-            <div class="search-box">
-                <input class="search-rect" type="text" placeholder="Search">
-                <div class="search-btn"><img src="../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+     <div class="top-container">
+        <header>
+            <div class="logo-container">
+                <a href="../index.html"><img src="../assets/header/pink-logo.svg" alt="Logo"></a>
             </div>
-            <div class="navbar-link"> <a href="../subjects.html">Subjects</a></div>
-            <div class="navbar-link"><a href="../about-us.html">About Us</a></div>
-        </nav>
-    </header>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
+    </div>
 
-
-    
 
     <div class="middle-container">
         <div class="side-menu">
@@ -59,7 +75,7 @@
                         </div>
                         <p class="card-description">Chemical reactions and how they break and form bonds between atoms. 
                             Balanced reactions, reversibility, and equilibrium.</p>
-                        <a href="../subjects/science/01-chemical-reactions.html" class="start-btn">Start</a>
+                            <div class="start-btn-container"><a href="../subjects/science/01-chemical-reactions.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 1 ends-->
@@ -73,7 +89,7 @@
                         </div>
                         <p class="card-description">Reactions of acids and bases, how acids and bases cancel out each other’s effects, chemical properties of acids and bases. The chapter also covers commons
                             between acid and base, importance of pH and also about salts and its uses.</p>
-                        <a href="../subjects/science/02-acids-bases.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/02-acids-bases.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/ph-paper.svg" alt=""></div>
                 </div>
@@ -89,7 +105,7 @@
                         </div>
                         <p class="card-description">Physical and chemical properties of metals and non-metals, properies of ionic componund, how metals and non-metals react. Also, extracting metals in 
                             different activity series and corrosion will be covered in this chapter.</p>
-                        <a href="../subjects/science/03-metals-non-metals.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/03-metals-non-metals.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                  <!-- Card 3 ends-->
@@ -103,7 +119,7 @@
                         </div>
                         <p class="card-description">This chapter covers Covalent bonds, versatile nature of carbon, saturated and unsaturated carbon compounds, chaining, branching and ringing,
                             functional groups chemicals properties of carbon, ethanol and ethanoic acid, soap and detergents.</p>
-                        <a href="../subjects/science/04-carbon-compounds.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/04-carbon-compounds.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/carbon-compound.svg" alt=""></div>
                 </div>
@@ -119,7 +135,7 @@
                         </div>
                         <p class="card-description">This chapter covers Dobereiner's Triads, Newlands's Law of Octaves, Mendeleev's periodic 
                             table with its achievements and limitations, Modern perodic table.</p>
-                        <a href="../subjects/science/05-periodic-classification.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/05-periodic-classification.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 5 ends-->
@@ -133,7 +149,7 @@
                         </div>
                         <p class="card-description">This chapter covers what are life processes, different type of nutrition, how to human beings get their nutrition, human respiration system and how it works, how does transportation and excretion
                             takes place in humans and plants.</p>
-                        <a href="../subjects/science/06-life-processes.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/06-life-processes.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/life-process.svg" alt=""></div>
                 </div>
@@ -149,7 +165,7 @@
                         </div>
                         <p class="card-description">This chapter covers nervous system and hormones of animals, reflex actions, how human brain works, coordinations in plants such a movement due to growth,
                             response to stimulus.</p>
-                        <a href="../subjects/science/07-control-and-coordination.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/07-control-and-coordination.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 7 ends-->
@@ -162,7 +178,7 @@
                             <a href="../subjects/science/08-reproduction.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">This chapters covers how organisms create exact copies, mode of reproduction, sexual reproduction in plants and humans, human male and female reproductive systems.</p>
-                        <a href="../subjects/science/08-reproduction.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/08-reproduction.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/reproduction.svg" alt=""></div>
                 </div>
@@ -178,7 +194,7 @@
                         </div>
                         <p class="card-description">This chapters covers how variation occurs due to reproduction, acquired and inherited traits, Mendel's contributions, sex determination, speciation, 
                             evolution by stages, how fossils are formed and human evolution.</p>
-                        <a href="../subjects/science/09-heredity-and-evolution.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/09-heredity-and-evolution.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                  <!-- Card 9 ends-->
@@ -193,7 +209,7 @@
                         <p class="card-description">This chapters covers reflection of light, concave & convex mirrors, image formation and refraction, representation of
                             images formed using ray diagrams, sign conversion and magnification.
                             </p>
-                        <a href="../subjects/science/10-light-reflection.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/10-light-reflection.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/refraction.svg" alt=""></div>
                 </div>
@@ -209,7 +225,7 @@
                         </div>
                         <p class="card-description">This chapter covers about the human eye, different type of vision defects and how to corret it, dispersion of white
                             light, twinkling of stars, scattering of light, tyndall effect and color of sky.</p>
-                        <a href="../subjects/science/11-human-eye.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/11-human-eye.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 11 ends-->
@@ -223,7 +239,7 @@
                         </div>
                         <p class="card-description">This chapter covers electric current and circuit, electric potential amd potential difference, circuit diagram components and its symbol, ohm's law,
                             factors on which resistence depends, resistors in series and parallel, heating effect of current and electric power.</p>
-                        <a href="../subjects/science/12-electricity.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/12-electricity.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/electricity.svg" alt=""></div>
                 </div>
@@ -239,7 +255,7 @@
                         </div>
                         <p class="card-description">This chapter covers magnetic fields and electromagnetic effects, Right-Hand Thumb Rule, electromagnets
                              and electric motors, electromagnetic induction, electric generators.</p>
-                        <a href="../subjects/science/13-magnetic-effect-of-electric-current.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/13-magnetic-effect-of-electric-current.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 13 ends-->
@@ -253,7 +269,7 @@
                         </div>
                         <p class="card-description">This chapter covers sources of energy such as fossil fuels and power plants along with its improvement in technologies for use,
                             non-conventional sources of energy such as solar, nuclear, geothermal and energy from sea and environmental consequences.</p>
-                        <a href="../subjects/science/14-sources-of-energy.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/14-sources-of-energy.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/power-plant.svg" alt=""></div>
                 </div>
@@ -269,13 +285,13 @@
                         </div>
                         <p class="card-description">This chapter covers ecosystem and its components, food chain and webs, how ozone layer 
                             is getting depleted and how to manage the garbage we produce.</p>
-                        <a href="../subjects/science/15-our-environment.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/15-our-environment.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 <!-- Card 15 ends-->
 
                  <!-- Card 16 -->
-                 <div class="card-right">
+                <div class="card-right">
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">16. Sustainable Management of Natural Resources </h2>
@@ -283,25 +299,28 @@
                         </div>
                         <p class="card-description">Chemical reactions and how they break and form bonds between atoms. 
                             Balanced reactions, reversibility, and equlibrium.</p>
-                        <a href="../subjects/science/16-sustainable-resource-mgmt.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/science/16-sustainable-resource-mgmt.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/science/natural-resources.svg" alt=""></div>
                 </div>
                 <!-- Card 16 ends-->
             </div>
-
-            <div class="chatbot" style="height: 10vh; width: 35vw;">
-                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-                <df-messenger
-                intent="WELCOME"
-                chat-title="Persistent Academy Bot"
-                agent-id="81357502-e82a-46ce-b23c-41ec49676eae"
-                chat-icon="https://storage.googleapis.com/elearning-bucket/chatbot.svg"
-                language-code="en"></df-messenger>
-            </div>
         </div>
     </div>
     
+    <div class="chatbot" style="height: 1px; width: 1px;">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+        intent="WELCOME"
+        chat-title="Persistent Academy Bot"
+        agent-id="81357502-e82a-46ce-b23c-41ec49676eae"
+        chat-icon="https://storage.googleapis.com/elearning-bucket/chatbot.svg"
+        language-code="en"></df-messenger>
+    </div>
+
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/instant-search.js"></script>
+	<script src="../js/topics.js"></script>
     
 </body>
 </html>
