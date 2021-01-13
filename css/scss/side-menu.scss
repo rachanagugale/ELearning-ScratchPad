@@ -1,0 +1,50 @@
+.side-menu {
+    width: 13em;
+    height: 100vh;
+    background-color: color('blue-violet');
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 5em;
+    z-index: 1;
+
+    .side-menu-title {
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: color('background-ivory');
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .subject-link-container {
+        width: 100%;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subject-link-container.current-subject {
+        background-color: #21202C; 
+        box-shadow: 0.5rem 0rem 0.5rem #676767;
+    }
+
+    .subject-link-container a {
+        color: color('background-ivory');
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .subject-link-container a:hover {
+        color: color('light-purple');
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .side-menu {
+        display: none;
+    }
+}

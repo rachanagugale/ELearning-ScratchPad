@@ -1,0 +1,26 @@
+$colors: (
+    dark-purple: #4b64cf,
+    light-purple: #778ada,
+    dark-pink: #fac7c2,
+    light-pink: #FEF3F2,
+    background-ivory: #F7F9FD,
+    light-grey: #EBEBEB,
+    dark-grey: #676767,
+    blue-violet: #2F2E41,
+    dark-blue-violet: #21202C
+);
+
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // background-color: color('background-ivory');
+}
