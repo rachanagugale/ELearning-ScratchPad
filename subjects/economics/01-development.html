@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL8YT0EEYR');
+	</script>
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development</title>
@@ -18,24 +28,32 @@
 <body>
 	<div class="top-container">
 		<div class="side-menu-title">Economics</div>
-		<header>
-			<div class="logo-container">
-				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
-			</div>
-			<nav>
-				<div class="search-box">
-					<input class="search-rect" type="text" placeholder="Search">
-					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
-				</div>
-				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-			</nav>
-		</header>	
-	</div>
+        <header>
+            <div class="logo-container">
+                <a href="../../index.html">
+					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
+    </div>
     
 
     <div class="middle-container">
-		<aside class="side-menu">            
+		<aside class="side-menu">
             <div class="chapter-link-container current-chapter"><a href="#" style="color: #778ada;"><div class="chapter-num">Chapter 1</div>Development</a></div>
             <div class="chapter-link-container"><a href="02-sectors-of-indian-economy.html"><div class="chapter-num">Chapter 2</div>Sectors Of The<br> Indian Economy</a></div>
             <div class="chapter-link-container"><a href="03-money-and-credit.html"><div class="chapter-num">Chapter 3</div>Money And Credit</a></div>
@@ -44,9 +62,11 @@
 		</aside>
 
 		<div class="main-content">
+			<p class="chapter-subtitle">Economics > Chapter 1</p>
+			<h1 class="chapter-name">Development</h1>
 			<div class="container">
 				<div class="pdf-container">
-					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks\economics\chapter01.pdf" style="width: 50vw;height:90vh"></iframe>
+					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks\economics\chapter01.pdf"></iframe>
 				</div>
 				<div class="in-this-topic-card">
 					<h2>In this article: </h2>
@@ -54,13 +74,12 @@
 						<li>
 							In the PDF:
 							<ol class="sub-list">
-								<li>What Development Promises</li>
+									<li>What Development Promises</li>
 								<li>Income and Other Goals</li>
 								<li>How to Compare Different Countries or States?</li>
 								<li>Income and Other Criteria</li>
 								<li>Public Facilities</li>
 								<li>Sustainability of Development</li>
-
 							</ol>
 						</li>
 						<li><a href="#imp-points">Important Points</a></li>
@@ -82,9 +101,7 @@
 						<li><b>Renewable resources:</b> Resources that are replenished by nature</li>
 						<li><b>Non-renewable resources:</b> Resources that are not replenished by nature and get exhausted after years of use.</li>
 						<li><b>Sustainability:</b> The regular process without harming the productivity of future generations and satisfies the needs of the present generation.</li>
-
-					</ul>
-					
+					</ul>	
 				</div>
 				<div id="external-resources" class="external-resources">
 					<h1>External Resources</h1>
@@ -99,7 +116,7 @@
 					</ul>
 				</div>
 
-				<div class="chatbot" style="height: 40vh; width: 35vw;">
+				<div class="chatbot" style="height: 1px; width: 1px;">
 					<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 					<df-messenger
 					intent="WELCOME"
@@ -112,17 +129,41 @@
 		</div>	
 	</div>
 	
-	<script type = "text/javascript" >
-		window.addEventListener('DOMContentLoaded', (event) => {
-			jQuery('header').css("background-color", "#F7F9FD");
-			jQuery(window).scroll(function() {
-				if (jQuery(window).scrollTop() > 0) {
-					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-				} else {
-					jQuery('header').css("box-shadow", "none");   
-				}
-			});
-		}); 
-	</script>
+	<div class="main-content">
+		<script type = "text/javascript" >
+				window.addEventListener('DOMContentLoaded', (event) => {
+					jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > 0) {
+							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+						} else {
+							jQuery('header').css("box-shadow", "none");   
+						}
+					});
+				}); 
+
+				window.addEventListener('DOMContentLoaded', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+
+				window.addEventListener('resize', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+			</script>
+			
+	<script src="../../js/mobile-nav.js"></script>
+	<script src="../../js/instant-search.js"></script>
+	<script src="../../js/article.js"></script>
 </body>
 </html>
