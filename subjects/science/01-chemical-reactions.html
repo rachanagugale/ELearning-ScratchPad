@@ -131,38 +131,38 @@
 		</div>	
 	</div>
 	
-	<div class="main-content">
-		<script type = "text/javascript" >
-				window.addEventListener('DOMContentLoaded', (event) => {
-					jQuery(window).scroll(function() {
-						if (jQuery(window).scrollTop() > 0) {
-							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-						} else {
-							jQuery('header').css("box-shadow", "none");   
-						}
-					});
-				}); 
 
-				window.addEventListener('DOMContentLoaded', (event) => {
-					const width = $(window).width();
-					const logo_img = document.getElementById('logo-img');
-					if (width < 1160) {
-						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
-					} else if (width >= 1160) {
-						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
-					}
-				}); 
+	<script type = "text/javascript" >
+		window.addEventListener('DOMContentLoaded', (event) => {
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 0) {
+					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+				} else {
+					jQuery('header').css("box-shadow", "none");   
+				}
+			});
+		}); 
 
-				window.addEventListener('resize', (event) => {
-					const width = $(window).width();
-					const logo_img = document.getElementById('logo-img');
-					if (width < 1160) {
-						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
-					} else if (width >= 1160) {
-						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
-					}
-				}); 
-			</script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const width = $(window).width();
+			const logo_img = document.getElementById('logo-img');
+			if (width < 1160) {
+				logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+			} else if (width >= 1160) {
+				logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+			}
+		}); 
+
+		window.addEventListener('resize', (event) => {
+			const width = $(window).width();
+			const logo_img = document.getElementById('logo-img');
+			if (width < 1160) {
+				logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+			} else if (width >= 1160) {
+				logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+			}
+		}); 
+	</script>
 			
 	<script src="../../js/mobile-nav.js"></script>
 	<script src="../../js/instant-search.js"></script>
