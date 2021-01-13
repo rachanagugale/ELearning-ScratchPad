@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL8YT0EEYR');
+	</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sermon at Benares</title>
@@ -18,20 +27,28 @@
 <body>
 	<div class="top-container">
 		<div class="side-menu-title">English</div>
-		<header>
-			<div class="logo-container">
-				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
-			</div>
-			<nav>
-				<div class="search-box">
-					<input class="search-rect" type="text" placeholder="Search">
-					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
-				</div>
-				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-			</nav>
-		</header>	
-	</div>
+        <header>
+            <div class="logo-container">
+                <a href="../../index.html">
+					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
+    </div>
     
 
     <div class="middle-container">
@@ -56,9 +73,11 @@
 		</aside>
 
 		<div class="main-content">
+			<p class="chapter-subtitle">English > Chapter 10</p>
+			<h1 class="chapter-name">The Sermon at Benares</h1>
 			<div class="container">
 				<div class="pdf-container">
-					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks/english/chapter10.pdf" style="width: 50vw;height:90vh"></iframe>
+					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks/english/chapter10.pdf"></iframe>
 				</div>
 				<div class="in-this-topic-card">
 					<h2>In this article: </h2>
@@ -93,7 +112,7 @@
 					</ul>
 				</div>
 
-				<div class="chatbot" style="height: 40vh; width: 35vw;">
+				<div class="chatbot" style="height: 1px; width: 1px;">
 					<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 					<df-messenger
 					intent="WELCOME"
@@ -106,17 +125,40 @@
 		</div>	
 	</div>
 	
-	<script type = "text/javascript" >
-		window.addEventListener('DOMContentLoaded', (event) => {
-			jQuery('header').css("background-color", "#F7F9FD");
-			jQuery(window).scroll(function() {
-				if (jQuery(window).scrollTop() > 0) {
-					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-				} else {
-					jQuery('header').css("box-shadow", "none");   
-				}
-			});
-		}); 
-	</script>
+	<div class="main-content">
+		<script type = "text/javascript" >
+				window.addEventListener('DOMContentLoaded', (event) => {
+					jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > 0) {
+							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+						} else {
+							jQuery('header').css("box-shadow", "none");   
+						}
+					});
+				}); 
+
+				window.addEventListener('DOMContentLoaded', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+
+				window.addEventListener('resize', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+			</script>
+	<script src="../../js/mobile-nav.js"></script>
+	<script src="../../js/instant-search.js"></script>
+	<script src="../../js/article.js"></script>
 </body>
 </html>
