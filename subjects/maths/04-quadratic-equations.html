@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL8YT0EEYR');
+	</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quadratic Equations</title>
@@ -17,20 +27,28 @@
 
 <body>
 	<div class="top-container">
-		<div class="side-menu-title">Maths</div>
-		<header>
-			<div class="logo-container">
-				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
-			</div>
-			<nav>
-				<div class="search-box">
-					<input class="search-rect" type="text" placeholder="Search">
-					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
-				</div>
-				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-			</nav>
-		</header>	
+		<div class="side-menu-title">Math</div>
+        <header>
+            <div class="logo-container">
+                <a href="../../index.html">
+					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
 	</div>
     
 
@@ -52,8 +70,9 @@
 			<div class="chapter-link-container"><a href="14-statistics.html"><div class="chapter-num">Chapter 14</div>Statistics</a></div>
 			<div class="chapter-link-container"><a href="15-probability.html"><div class="chapter-num">Chapter 15</div>Probability</a></div>
 		</aside>
-
 		<div class="main-content">
+			<p class="chapter-subtitle">Math > Chapter 4</p>
+			<h1 class="chapter-name">Quadratic Equations</h1>
 			<div class="container">
 				<div class="pdf-container">
 					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks/math/chapter04.pdf" style="width: 50vw;height:90vh"></iframe>
@@ -85,18 +104,19 @@
 						<li>A quadratic polynomial of the form ax² + bx + c, where a ≠ 0 and a, b, c are real numbers, is called a quadratic equation
                             when ax² + bx + c = 0.
                             Here a and b are the coefficients of x² and x respectively and ‘c’ is a constant term.
-                            <ul><li>Any value is a solution of a quadratic equation if and only if it satisfies the quadratic equation.
-                                <li>Quadratic formula: The roots, i.e., α and β of a quadratic equation ax² + bx + c = 0 are given
-                                     by (−b±√D)/2a or (−b±√(b²−4ac))/(2a) provided b² – 4ac ≥ 0.
+                            <ul>
+								<li>Any value is a solution of a quadratic equation if and only if it satisfies the quadratic equation.
+                                <li>Quadratic formula: The roots, i.e., α and β of a quadratic equation ax² + bx + c = 0 are given by (−b±√D)/2a or (−b±√(b²−4ac))/(2a) provided b² – 4ac ≥ 0.
                             </ul>
                             Here, the value b² – 4ac is known as the discriminant and is generally denoted by D. ‘D’ helps us to determine the nature of roots for a given quadratic equation. Thus D = b² – 4ac.
                             The rules are:
-                            <ol><li>If D = 0 ⇒ The roots are Real and Equal.</li>
+                            <ol>
+								<li>If D = 0 ⇒ The roots are Real and Equal.</li>
                                 <li>If D > 0 ⇒ The two roots are Real and Unequal.</li>
-                                <li>If D &lt; 0 ⇒ No Real roots exist.</li>
+                                <li>If D < 0 ⇒ No Real roots exist.</li>
                             </ol>
                             If α and β are the roots of the quadratic equation, then Quadratic equation is x² – (α + β) x + α β = 0 Or x² – (sum of roots) x + product of roots = 0                            
-                    </ul>
+                    </ul>	
 				</div>
 				<div id="external-resources" class="external-resources">
 					<h1>External Resources</h1>
@@ -107,7 +127,7 @@
 					</ul>
 				</div>
 
-				<div class="chatbot" style="height: 40vh; width: 35vw;">
+				<div class="chatbot" style="height: 1px; width: 1px;">
 					<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 					<df-messenger
 					intent="WELCOME"
@@ -120,17 +140,41 @@
 		</div>	
 	</div>
 	
-	<script type = "text/javascript" >
-		window.addEventListener('DOMContentLoaded', (event) => {
-			jQuery('header').css("background-color", "#F7F9FD");
-			jQuery(window).scroll(function() {
-				if (jQuery(window).scrollTop() > 0) {
-					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-				} else {
-					jQuery('header').css("box-shadow", "none");   
-				}
-			});
-		}); 
-	</script>
+	<div class="main-content">
+		<script type = "text/javascript" >
+				window.addEventListener('DOMContentLoaded', (event) => {
+					jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > 0) {
+							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+						} else {
+							jQuery('header').css("box-shadow", "none");   
+						}
+					});
+				}); 
+
+				window.addEventListener('DOMContentLoaded', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+
+				window.addEventListener('resize', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+			</script>
+			
+	<script src="../../js/mobile-nav.js"></script>
+	<script src="../../js/instant-search.js"></script>
+	<script src="../../js/article.js"></script>
 </body>
 </html>
