@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HL8YT0EEYR');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math</title>
@@ -14,27 +23,35 @@
     </style>
 </head>
 <body>
-    
-    <header>
-        <div class="logo-container">
-            <a href="../index.html"><img class="logo-svg" src="../assets/header/pink-logo.svg" alt="Logo"></a>
-        </div>
-        <nav>
-            <div class="search-box">
-                <input class="search-rect" type="text" placeholder="Search">
-                <div class="search-btn"><img src="../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+    <div class="top-container">
+        <header>
+            <div class="logo-container">
+                <a href="../index.html"><img src="../assets/header/pink-logo.svg" alt="Logo"></a>
             </div>
-            <div class="navbar-link"> <a href="../subjects.html">Subjects</a></div>
-            <div class="navbar-link"><a href="../about-us.html">About Us</a></div>
-        </nav>
-    </header>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
+    </div>
     
 
     <div class="middle-container">
         <div class="side-menu">
             <div class="side-menu-title">Subjects</div>
             <div class="subject-link-container"><a href="science-topics.html">Science</a></div>
-            <div class="subject-link-container current-subject"><a href="#" style="color: #778ada;">Math</a></div>
+            <div class="subject-link-container current-subject"><a href="math-topics.html" style="color: #778ada;">Math</a></div>
             <div class="subject-link-container"><a href="history-topics.html">History</a></div>
             <div class="subject-link-container"><a href="geography-topics.html">Geography</a></div>
             <div class="subject-link-container"><a href="english-topics.html">English</a></div>
@@ -43,38 +60,37 @@
             <div class="subject-link-container"><a href="IT-topics.html">IT</a></div>
         </div>
     
-        <div class="main-container">
-            
+        <div class="main-container">            
             <div class="cards-container">
                 <h1>Math</h1>
                 <!-- Card 1 -->
-                <div class="card-left">
+                <div class="card card-left">
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/real-numbers.svg" alt=""></div>
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">1. Real Numbers</h2>
-                            <a href="../subjects/maths/01-real-numbers.html#imp-points" class="imp-points-btn">Important Points</a>
+                            <a href="../subjects/maths/01-real-numbers.html#imp-points" class="imp-points-btn" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">Real numbers constitute the union of all rational and irrational numbers. Any real number can be plotted on the number line.</p>
-                        <a href="../subjects/maths/01-real-numbers.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/01-real-numbers.html" class="start-btn">Start</a></div>                        
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card-right">
+                <div class="card card-right">
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">2. Polynomials</h2>
                             <a href="../subjects/maths/02-polynomials.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">An algebraic expression can have exponents that are rational numbers. However, a polynomial is an algebraic expression in which the exponent on any variable is a whole number.</p>
-                        <a href="../subjects/maths/02-polynomials.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/02-polynomials.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/polynomial.svg" alt=""></div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card-left">
+                <div class="card card-left">
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/linear-equation.svg" alt=""></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -82,25 +98,25 @@
                             <a href="../subjects/maths/03-linear-equations-in-two-variables.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">Equations in which the powers of all the variables involved are one are called linear equations. The degree of a linear equation is always one.</p>
-                        <a href="../subjects/maths/03-linear-equations-in-two-variables.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/03-linear-equations-in-two-variables.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="card-right">
+                <div class="card card-right">
                     <div class="card-content">
                         <div class="card-top">
-                            <h2 class="card-title">4. Quadratic Equations </h2>
+                            <h2 class="card-title">4. Quadratic Equations</h2>
                             <a href="../subjects/maths/04-quadratic-equations.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
-                        <p class="card-description">A polynomial of the form ax2+bx+c, where a, b and c are real numbers and a≠0 is called a quadratic polynomial.</p>
-                        <a href="../subjects/maths/04-quadratic-equations.html" class="start-btn">Start</a>
+                        <p class="card-description">A polynomial of the form ax^2+bx+c, where a, b and c are real numbers and a≠0 is called a quadratic polynomial.</p>
+                        <div class="start-btn-container"><a href="../subjects/maths/04-quadratic-equations.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/quadratic-eq.svg" alt=""></div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="card-left">
+                <div class="card card-left">
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/arithmetic-progression.svg" alt=""></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -108,153 +124,156 @@
                             <a href="../subjects/maths/05-arithmetic-progressions.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">An arithmetic progression (A.P) is a progression in which the difference between two consecutive terms is constant.</p>
-                        <a href="../subjects/maths/05-arithmetic-progressions.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/05-arithmetic-progressions.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
                 
                 <!-- Card 6 -->
-                <div class="card-right">
+                <div class="card card-right">
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">6. Triangles</h2>
                             <a href="../subjects/maths/06-triangles.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
-                        <p class="card-description">The most important property of a triangle is that the sum of the internal angles of a triangle is equal to 180 degrees. In Euclidean geometry, triangle is seen as three non-collinear points in a unique plane.  </p>
-                        <a href="../subjects/maths/06-triangles.html" class="start-btn">Start</a>
+                        <p class="card-description">The most important property of a triangle is that the sum of the internal angles of a triangle is equal to 180 degrees. In Euclidean geometry, triangle is seen as three non-collinear points in a unique plane.</p>
+                        <div class="start-btn-container"><a href="../subjects/maths/06-triangles.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/triangles.svg" alt=""></div>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="card-left">
+                <div class="card card-left">
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/coordinate-geometry.svg" alt=""></div>
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">7. Coordinate Geometry</h2>
-                            <a href="../subjects/science/07-control-and-coordination.html#imp-points" class="imp-points-btn">Important Points</a>
+                            <a href="../subjects/maths/07-coordinate-geometry.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
-                        <p class="card-description">Using coordinate geometry, it is possible to find the distance between two points, dividing lines in m:n ratio, finding the mid-point of a line, etc. </p>
-                        <a href="../subjects/maths/07-coordinate-geometry.html" class="start-btn">Start</a>
+                        <p class="card-description">Using coordinate geometry, it is possible to find the distance between two points, dividing lines in m:n ratio, finding the mid-point of a line, etc.</p>
+                        <div class="start-btn-container"><a href="../subjects/maths/07-coordinate-geometry.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
-                
+
                 <!-- Card 8 -->
-                <div class="card-right">
+                <div class="card card-right">
                     <div class="card-content">
                         <div class="card-top">
                             <h2 class="card-title">8. Introduction to Trigonometry</h2>
                             <a href="../subjects/maths/08-intro-to-trigonometry.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">We will study the relationship between the sides and angles of a right-angled triangle. The basics of trigonometry define three primary functions which are sine, cosine and tangent.</p>
-                        <a href="../subjects/maths/08-intro-to-trigonometry.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/08-intro-to-trigonometry.html" class="start-btn">Start</a></div>
                     </div>
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/trigonometry-intro.svg" alt=""></div>
                 </div>
 
                 <!-- Card 9 -->
-                <div class="card-left">
+                <div class="card card-left">
                     <div class="card-image"><img src="../assets/topics-page/subjects/math/trigonometry-applications.svg" alt=""></div>
                     <div class="card-content">
                         <div class="card-top">
-                            <h2 class="card-title">9. Some Applications of Trigonometry </h2>
+                            <h2 class="card-title">9. Some Applications of Trigonometry</h2>
                             <a href="../subjects/maths/09-applications-of-trigonometry.html#imp-points" class="imp-points-btn">Important Points</a>
                         </div>
                         <p class="card-description">Trigonometry and its functions have an enormous number of uses in our daily life. For instance, it is used in geography, astronomy, etc.</p>
-                        <a href="../subjects/maths/09-applications-of-trigonometry.html" class="start-btn">Start</a>
-                    </div>
-                </div>
-                
-                <!-- Card 10 -->
-                <div class="card-right">
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">10. Circles</h2>
-                            <a href="../subjects/maths/10-circles.html#imp-points" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">A circle is a closed two-dimensional figure in which the set of all the points in the plane is equidistant from a given point called “centre”.</p>
-                        <a href="../subjects/maths/10-circles.html" class="start-btn">Start</a>
-                    </div>
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/circle.svg" alt=""></div>
-                </div>
-
-                <!-- Card 11 -->
-                <div class="card-left">
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/construction.svg" alt=""></div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">11. Constructions</h2>
-                            <a href="../subjects/maths/11-constructions.html#imp-points" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">In this chapter we will learn to construct various geometrical figures by following the steps of construction. </p>
-                        <a href="../subjects/maths/11-constructions.html" class="start-btn">Start</a>
+                        <div class="start-btn-container"><a href="../subjects/maths/09-applications-of-trigonometry.html" class="start-btn">Start</a></div>
                     </div>
                 </div>
 
-                <!-- Card 12 -->
-                <div class="card-right">
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">12. Areas Related To Circles</h2>
-                            <a href="../subjects/maths/12-areas-related-to-circle.htm#imp-pointsl" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">Area of a circle is the region occupied by the circle in a two-dimensional plane. It can be determined easily using a formula, A = πr2, (Pi r-squared) where r is the radius of the circle. </p>
-                        <a href="../subjects/maths/12-areas-related-to-circle.html" class="start-btn">Start</a>
+               <!-- Card 10 -->
+               <div class="card card-right">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">10. Circles</h2>
+                        <a href="../subjects/maths/10-circles.html#imp-points" class="imp-points-btn">Important Points</a>
                     </div>
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/circle-area.svg" alt=""></div>
+                    <p class="card-description">A circle is a closed two-dimensional figure in which the set of all the points in the plane is equidistant from a given point called “centre”.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/10-circles.html" class="start-btn">Start</a></div>
                 </div>
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/circle.svg" alt=""></div>
+            </div> 
 
-                <!-- Card 13 -->
-                <div class="card-left">
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/volumes.svg" alt=""></div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">13. Surface Areas and Volumes</h2>
-                            <a href="../subjects/maths/13-surface-area-and-volume.html#imp-points" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">In this chapter, we are going to discuss the surface area and volume for different solid shapes such as the cube, cuboid, cone, cylinder, and so on. </p>
-                        <a href="../subjects/maths/13-surface-area-and-volume.html" class="start-btn">Start</a>
+            <!-- Card 11 -->
+            <div class="card card-left">
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/construction.svg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">11. Constructions</h2>
+                        <a href="../subjects/maths/11-constructions.html#imp-points" class="imp-points-btn">Important Points</a>
                     </div>
-                </div>
-
-                 <!-- Card 14 -->
-                 <div class="card-right">
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">14. Statistics</h2>
-                            <a href="../subjects/maths/14-statistics.html#imp-points" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. In other words, it is a mathematical discipline to collect, summarize data.</p>
-                        <a href="../subjects/maths/14-statistics.html" class="start-btn">Start</a>
-                    </div>
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/statistics.svg" alt=""></div>
-                </div>
-                
-                <!-- Card 15 -->
-                <div class="card-left">
-                    <div class="card-image"><img src="../assets/topics-page/subjects/math/probability.svg" alt=""></div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <h2 class="card-title">15. Probability</h2>
-                            <a href="../subjects/maths/15-probability.html#imp-points" class="imp-points-btn">Important Points</a>
-                        </div>
-                        <p class="card-description">Probability means possibility. It is a branch of mathematics that deals with the occurrence of a random event. The value is expressed from zero to one. </p>
-                        <a href="../subjects/maths/15-probability.html" class="start-btn">Start</a>
-                    </div>
+                    <p class="card-description">In this chapter we will learn to construct various geometrical figures by following the steps of construction.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/11-constructions.html" class="start-btn">Start</a></div>
                 </div>
             </div>
 
-            <div class="chatbot" style="height: 10vh; width: 35vw;">
-                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-                <df-messenger
-                intent="WELCOME"
-                chat-title="Persistent Academy Bot"
-                agent-id="81357502-e82a-46ce-b23c-41ec49676eae"
-                chat-icon="https://storage.googleapis.com/elearning-bucket/chatbot.svg"
-                language-code="en"></df-messenger>
+            <!-- Card 12 -->
+            <div class="card card-right">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">12. Areas Related To Circles</h2>
+                        <a href="../subjects/maths/12-areas-related-to-circle.html#imp-points" class="imp-points-btn">Important Points</a>
+                    </div>
+                    <p class="card-description">Area of a circle is the region occupied by the circle in a two-dimensional plane. It can be determined easily using a formula, A = πr2, (Pi r-squared) where r is the radius of the circle.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/12-areas-related-to-circle.html" class="start-btn">Start</a></div>
+                </div>
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/circle-area.svg" alt=""></div>
+            </div> 
+
+            <!-- Card 13 -->
+            <div class="card card-left">
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/volumes.svg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">13. Surface Areas and Volumes</h2>
+                        <a href="../subjects/maths/13-surface-area-and-volume.html#imp-points" class="imp-points-btn">Important Points</a>
+                    </div>
+                    <p class="card-description">In this chapter, we are going to discuss the surface area and volume for different solid shapes such as the cube, cuboid, cone, cylinder, and so on.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/13-surface-area-and-volume.html" class="start-btn">Start</a></div>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="card card-right">
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">14. Statistics</h2>
+                        <a href="../subjects/maths/14-statistics.html#imp-points" class="imp-points-btn">Important Points</a>
+                    </div>
+                    <p class="card-description">Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. In other words, it is a mathematical discipline to collect, summarize data.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/14-statistics.html" class="start-btn">Start</a></div>
+                </div>
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/statistics.svg" alt=""></div>
+            </div> 
+
+            <!-- Card 15 -->
+            <div class="card card-left">
+                <div class="card-image"><img src="../assets/topics-page/subjects/math/probability.svg" alt=""></div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <h2 class="card-title">15. Probability</h2>
+                        <a href="../subjects/maths/15-probability.html#imp-points" class="imp-points-btn">Important Points</a>
+                    </div>
+                    <p class="card-description">Probability means possibility. It is a branch of mathematics that deals with the occurrence of a random event. The value is expressed from zero to one.</p>
+                    <div class="start-btn-container"><a href="../subjects/maths/15-probability.html" class="start-btn">Start</a></div>
+                </div>
+            </div>
+
             </div>
         </div>
     </div>
-    
-    
+
+    <div class="chatbot" style="height: 1px; width: 1px;">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+        intent="WELCOME"
+        chat-title="Persistent Academy Bot"
+        agent-id="81357502-e82a-46ce-b23c-41ec49676eae"
+        chat-icon="https://storage.googleapis.com/elearning-bucket/chatbot.svg"
+        language-code="en"></df-messenger>
+    </div>
+
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/instant-search.js"></script>
+	<script src="../js/topics.js"></script>
 </body>
 </html>
