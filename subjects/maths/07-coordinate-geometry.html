@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL8YT0EEYR');
+	</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coordinate Geometry</title>
@@ -17,20 +27,28 @@
 
 <body>
 	<div class="top-container">
-		<div class="side-menu-title">Maths</div>
-		<header>
-			<div class="logo-container">
-				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
-			</div>
-			<nav>
-				<div class="search-box">
-					<input class="search-rect" type="text" placeholder="Search">
-					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
-				</div>
-				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-			</nav>
-		</header>	
+		<div class="side-menu-title">Math</div>
+        <header>
+            <div class="logo-container">
+                <a href="../../index.html">
+					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
 	</div>
     
 
@@ -54,6 +72,8 @@
 		</aside>
 
 		<div class="main-content">
+			<p class="chapter-subtitle">Math > Chapter 7</p>
+			<h1 class="chapter-name">Coordinate Geometry</h1>
 			<div class="container">
 				<div class="pdf-container">
 					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks/math/chapter07.pdf" style="width: 50vw;height:90vh"></iframe>
@@ -81,11 +101,17 @@
 				<div id="imp-points" class="imp-points">
 					<h1>Important Points</h1>
 					<ul>
-						<li><b>Section formula:</b> The coordinates of the point which divides the line segment joining the points A(x1, y1) and B(x2, y2) internally in the ratio m : n are:
-                            The above formula is section formula. The ratio m: n can also be written as k : 1, The
-                            co-ordinates of P can also be written as P(x, y) = kx2+x1k+1,ky2+y1k+1</li>
-                        <li>The mid-point of the line segment joining the points P(x1, y1) and Q(x2, y2) is
-                            Here m : n = 1 :1.</li>
+						<li><b>Section formula:</b></br>The section formula helps in finding the coordinates of a point dividing a given line segment into two parts such that their lengths are in a given ratio. A special case of this is the midpoint of a line segment, which divides the line segment in two two parts in the ratio 1:1.
+						</br>This formula is helpful in coordinate geometry, for instance, it can be used to find out the centroid, incenter and excenters of a triangle. It has applications in physics too; it helps find the center of mass of systems, equilibrium points, and more.</li>
+						<li><b>Distance formula:</b><br>Any point on the coordinate axes can be denoted by a pair of numbers, called the coordinates of that point. Similarly, every place in this world is denoted by a latitude and longitude, which give us the coordinates of that place. We can make use of these coordinates to compute the distance between the cities using the distance formula.</li>
+						<ol>
+							<li>X-coordinate or abscissa: The distance between a point and y-axis.</li>
+							<li>Y-coordinate or ordinate: The distance between a point and x-axis.</li>
+							<li>Form of a point on the x-axis: (x, 0); on the y-axis:  (0, y)</li>
+							<li>A linear equation, ax + by + c = 0, (a, b ≠ zero), when represented graphically is a straight line.</li>
+							<li>The graph of y = ax2 + bx + c (a ≠ 0), is a parabola.</li>
+						</ol>
+						<li><b>Area of a Triangle:</b><br>When three vertices of a triangle are given, it is cumbersome to try to find the length of the base and the height of the triangle to compute its area. However, if the coordinates of the vertices of the triangle are known, there is a simpler formula to calculate the area. This formula can also be used to find the areas of quadrilaterals as well.</li>
                       </ul>
 				</div>
 				<div id="external-resources" class="external-resources">
@@ -97,7 +123,7 @@
 					</ul>
 				</div>
 
-				<div class="chatbot" style="height: 40vh; width: 35vw;">
+				<div class="chatbot" style="height: 1px; width: 1px;">
 					<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 					<df-messenger
 					intent="WELCOME"
@@ -110,17 +136,41 @@
 		</div>	
 	</div>
 	
-	<script type = "text/javascript" >
-		window.addEventListener('DOMContentLoaded', (event) => {
-			jQuery('header').css("background-color", "#F7F9FD");
-			jQuery(window).scroll(function() {
-				if (jQuery(window).scrollTop() > 0) {
-					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-				} else {
-					jQuery('header').css("box-shadow", "none");   
-				}
-			});
-		}); 
-	</script>
+	<div class="main-content">
+		<script type = "text/javascript" >
+				window.addEventListener('DOMContentLoaded', (event) => {
+					jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > 0) {
+							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+						} else {
+							jQuery('header').css("box-shadow", "none");   
+						}
+					});
+				}); 
+
+				window.addEventListener('DOMContentLoaded', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+
+				window.addEventListener('resize', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+			</script>
+			
+	<script src="../../js/mobile-nav.js"></script>
+	<script src="../../js/instant-search.js"></script>
+	<script src="../../js/article.js"></script>
 </body>
 </html>
