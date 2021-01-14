@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL8YT0EEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL8YT0EEYR');
+	</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangles</title>
@@ -17,20 +27,28 @@
 
 <body>
 	<div class="top-container">
-		<div class="side-menu-title">Maths</div>
-		<header>
-			<div class="logo-container">
-				<a href="../../index.html"><img class="logo-svg" src="../../assets/header/Logo.svg" alt="Logo"></a>
-			</div>
-			<nav>
-				<div class="search-box">
-					<input class="search-rect" type="text" placeholder="Search">
-					<div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
-				</div>
-				<div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-				<div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-			</nav>
-		</header>	
+		<div class="side-menu-title">Math</div>
+        <header>
+            <div class="logo-container">
+                <a href="../../index.html">
+					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <div class="search-container">
+                    <div class="search-input-container">
+                        <input class="search-rect" type="text" placeholder="Search">
+                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                    </div>
+                    <div class="search-results-container">
+                        <a href="#" class="search-result"></a>
+                        <a href="#" class="search-result"></a>
+                    </div>
+                </div>
+                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+            </nav>
+            <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
+        </header>
 	</div>
     
 
@@ -53,7 +71,10 @@
 			<div class="chapter-link-container"><a href="15-probability.html"><div class="chapter-num">Chapter 15</div>Probability</a></div>
 		</aside>
 
+
 		<div class="main-content">
+			<p class="chapter-subtitle">Math > Chapter 6</p>
+			<h1 class="chapter-name">Triangles</h1>
 			<div class="container">
 				<div class="pdf-container">
 					<iframe src="https://storage.googleapis.com/elearning-bucket/textbooks/math/chapter06.pdf" style="width: 50vw;height:90vh"></iframe>
@@ -84,30 +105,35 @@
 					<h1>Important Points</h1>
 					<ul>
 						<b>SIMILAR FIGURES</b>
-                        <li>Two figures having the same shape but not necessary the same size are called similar figures.</li>
-                        <li>All congruent figures are similar but all similar figures are not congruent.</li>
-                        <b>SIMILAR POLYGONS</b>
-                        <li>Two polygons are said to be similar to each other, if:
-                        <ol><li> their corresponding angles are equal, and</li>
-                            <li>the lengths of their corresponding sides are proportional</li></ol>
-                        </li>
-                        <li>Any two triangles are similar, if their –</li>
+                        <ul>
+							<li>Two figures having the same shape but not necessary the same size are called similar figures.</li>
+                        	<li>All congruent figures are similar but all similar figures are not congruent.</li>
+						</ul>
+						</br><b>SIMILAR POLYGONS</b>
+						</br>Two polygons are said to be similar to each other, if:
+                        <ol>
+							<li> their corresponding angles are equal, and</li>
+							<li>the lengths of their corresponding sides are proportional</li>
+						</ol>
+						</br>Any two triangles are similar, if their –
                         <ol><li>Corresponding angles are equal</li>
                             <li>Corresponding sides are proportional</li>
                         </ol>
-                        <b>THALES THEOREM OR BASIC PROPORTIONALITY THEORY-</b> 
-                        If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.
-                    </br><b>CRITERION FOR SIMILARITY OF TRIANGLES</b>
-                        Two triangles are similar if either of the following three criterion’s are satisfied:
+						</br><b>THALES THEOREM OR BASIC PROPORTIONALITY THEORY-</b> 
+						</br>If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.
+                    	</br></br><b>CRITERION FOR SIMILARITY OF TRIANGLES</b>
+						</br>Two triangles are similar if either of the following three criterion’s are satisfied:
                         <ul><li>AAA similarity Criterion. If two triangles are equiangular, then they are similar.</li>
                             <li>Corollary (AA similarity). If two angles of one triangle are respectively equal to two angles of another triangle, then the two triangles are similar.</li>
                             <li>SSS Similarity Criterion. If the corresponding sides of two triangles are proportional, then they are similar.</li>
-                            <li>SAS Similarity Criterion. If in two triangles, one pair of corresponding sides are proportional and the included angles are equal, then the two triangles are similar.</li></ul>
+							<li>SAS Similarity Criterion. If in two triangles, one pair of corresponding sides are proportional and the included angles are equal, then the two triangles are similar.</li>
+						</ul>
                         Results in Similar Triangles based on Similarity Criterion:
                         <ol><li>Ratio of corresponding sides = Ratio of corresponding perimeters</li>
                         	<li>Ratio of corresponding sides = Ratio of corresponding medians</li>
                             <li>Ratio of corresponding sides = Ratio of corresponding altitudes</li>
-                            <li>Ratio of corresponding sides = Ratio of corresponding angle bisector segments.</li></ol>                      
+							<li>Ratio of corresponding sides = Ratio of corresponding angle bisector segments.</li>
+						</ol>                      
                     </ul>
 				</div>
 				<div id="external-resources" class="external-resources">
@@ -119,7 +145,7 @@
 					</ul>
 				</div>
 
-				<div class="chatbot" style="height: 40vh; width: 35vw;">
+				<div class="chatbot" style="height: 1px; width: 1px;">
 					<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 					<df-messenger
 					intent="WELCOME"
@@ -132,17 +158,41 @@
 		</div>	
 	</div>
 	
-	<script type = "text/javascript" >
-		window.addEventListener('DOMContentLoaded', (event) => {
-			jQuery('header').css("background-color", "#F7F9FD");
-			jQuery(window).scroll(function() {
-				if (jQuery(window).scrollTop() > 0) {
-					jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
-				} else {
-					jQuery('header').css("box-shadow", "none");   
-				}
-			});
-		}); 
-	</script>
+	<div class="main-content">
+		<script type = "text/javascript" >
+				window.addEventListener('DOMContentLoaded', (event) => {
+					jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > 0) {
+							jQuery('header').css("box-shadow", "0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4)");	           
+						} else {
+							jQuery('header').css("box-shadow", "none");   
+						}
+					});
+				}); 
+
+				window.addEventListener('DOMContentLoaded', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+
+				window.addEventListener('resize', (event) => {
+					const width = $(window).width();
+					const logo_img = document.getElementById('logo-img');
+					if (width < 1160) {
+						logo_img.setAttribute('src', '../../assets/header/pink-logo.svg');
+					} else if (width >= 1160) {
+						logo_img.setAttribute('src', '../../assets/header/Logo.svg');
+					}
+				}); 
+			</script>
+			
+	<script src="../../js/mobile-nav.js"></script>
+	<script src="../../js/instant-search.js"></script>
+	<script src="../../js/article.js"></script>
 </body>
 </html>
