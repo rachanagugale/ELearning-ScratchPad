@@ -36,14 +36,14 @@ header {
         }
 
         .search-rect {
-            width: 10vw;
-            height: 4vh;
-            border-radius: 0.25 0 0 0.25rem;
+            width: 8em;
+            height: 2em;
+            border-radius: 0.25 0 0 0.25em;
             background-color: #DBDBDB;
-            padding-left: 0.5rem;
+            padding-left: 0.5em;
             border: none;
             border-right: color('dark-grey') 1px solid;
-            font-size: 1vw;
+            font-size: 1em;
         }
 
 
@@ -55,17 +55,18 @@ header {
         
         .search-rect::placeholder {
             color: color('dark-grey');
-            font-size: 1vw;
-            padding-left: 2rem;
+            font-size: 1em;
+            padding-left: 2em;
         }
 
         .search-btn {
-            height: 4vh;
-            width: 4vh;
+            height: 2em;
+            width: 2em;
             background-color: #BBBBBB;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0.5em;
         }
 
         .search-btn:active {
@@ -73,8 +74,8 @@ header {
         }
 
         .search-svg {
-            height: 2.5vh;
-            width: 2.5vh;
+            height: 2em;
+            width: 2em;
         }
 
         .search-svg:hover {
@@ -84,7 +85,7 @@ header {
         .navbar-link {
             a {
                 color: color('dark-blue-violet');
-                font-size: 1vw;
+                font-size: 1em;
                 text-decoration: none;
             }
         
@@ -99,17 +100,15 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
+
     body {
         overflow-x: hidden;
+        font-size: 10px;
     }
 
     .top-container {
-        .corner-purple-blob {
-            display: none;
-        }
-        
-        .corner-pink-blob {
+        .corner-purple-blob, .corner-pink-blob {
             display: none;
         }
     }
@@ -119,13 +118,17 @@ header {
         height: 10vh;
         justify-content: center;
         align-items: center;
-        background-color: color('dark-purple');
-        box-shadow: 0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.4);
+        background-color: color('blue-violet');
+        box-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.4);
 
         .logo-container {
-            width: 20%;
+            width: fit-content;
             margin: 0;
             padding: 0;
+
+            img {
+                width: 10em;
+            }
         }
 
         nav {
@@ -137,14 +140,15 @@ header {
             display: flex;
             flex-direction: column;
             align-content: center;
-            background-color: color('dark-purple');
+            background-color: color('blue-violet');
+            opacity: 0.98;
             transform: translateY(-120%);
             transition: transform 0.25s ease-in;
 
             .navbar-link {
                 a {
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 2em;
                     text-decoration: none;
                 }
             
@@ -154,16 +158,20 @@ header {
                 }
             }
         }
+    }
 
-        .hamburger-menu-icon {
-            width: 1.8em;
-            display: inline-block;
-            margin-left: 50%;
-        }
+    .hamburger-menu-icon {
+        width: fit-content;
+        display: inline-block;
+        margin-left: 50%;
 
-        .hamburger-menu-icon:hover {
-            cursor: pointer;
+        img {
+            width: 3em;
         }
+    }
+
+    .hamburger-menu-icon:hover {
+        cursor: pointer;
     }
 
     .nav-active {
