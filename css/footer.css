@@ -27,6 +27,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30em;
 }
 
@@ -45,14 +48,19 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 5em;
+    margin: 5vw;
     padding: 0;
   }
   .footer-container .footer-logo img {
     width: 10em;
   }
-  .footer-container .footer-nav {
-    font-size: 1.2em;
+  .footer-container .footer-container .footer-nav {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer-container .footer-container .footer-nav a {
+    font-size: 3em;
   }
 }
 /*# sourceMappingURL=footer.css.map */

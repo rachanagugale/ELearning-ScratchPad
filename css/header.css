@@ -43,7 +43,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 header nav .search-input-container {
@@ -52,54 +52,57 @@ header nav .search-input-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 0.25rem;
 }
 
 header nav .search-rect {
-  width: 8em;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 10em;
   height: 2em;
-  border-radius: 0.25 0 0 0.25em;
+  border-radius: 0 0.25rem 0.25rem 0;
   background-color: #DBDBDB;
   padding-left: 0.5em;
   border: none;
-  border-right: color("dark-grey") 1px solid;
   font-size: 1em;
+  color: #676767;
 }
 
 header nav .search-rect:focus {
   outline: none;
   border-color: #9ecaed;
-  -webkit-box-shadow: 0 0 10px #9ecaed;
-          box-shadow: 0 0 10px #9ecaed;
+  -webkit-box-shadow: 0 0 5px #9ecaed;
+          box-shadow: 0 0 5px #9ecaed;
 }
 
 header nav .search-rect::-webkit-input-placeholder {
   color: color("dark-grey");
   font-size: 1em;
-  padding-left: 2em;
 }
 
 header nav .search-rect:-ms-input-placeholder {
   color: color("dark-grey");
   font-size: 1em;
-  padding-left: 2em;
 }
 
 header nav .search-rect::-ms-input-placeholder {
   color: color("dark-grey");
   font-size: 1em;
-  padding-left: 2em;
 }
 
 header nav .search-rect::placeholder {
   color: color("dark-grey");
   font-size: 1em;
-  padding-left: 2em;
 }
 
 header nav .search-btn {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   height: 2em;
   width: 2em;
-  background-color: #BBBBBB;
+  background-color: #DBDBDB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +113,7 @@ header nav .search-btn {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 header nav .search-btn:active {
@@ -117,8 +121,8 @@ header nav .search-btn:active {
 }
 
 header nav .search-svg {
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 header nav .search-svg:hover {
@@ -144,7 +148,10 @@ header nav .navbar-link a:hover {
     overflow-x: hidden;
     font-size: 10px;
   }
-  .top-container .corner-purple-blob, .top-container .corner-pink-blob {
+  .top-container .corner-purple-blob {
+    display: none;
+  }
+  .top-container .corner-pink-blob {
     display: none;
   }
   header {
@@ -202,6 +209,31 @@ header nav .navbar-link a:hover {
   header nav .navbar-link a:hover {
     color: white;
     opacity: 0.8;
+  }
+  header nav .search-rect {
+    width: 10em;
+    height: 2em;
+    font-size: 2em;
+  }
+  header nav .search-rect::-webkit-input-placeholder {
+    font-size: 1em;
+  }
+  header nav .search-rect:-ms-input-placeholder {
+    font-size: 1em;
+  }
+  header nav .search-rect::-ms-input-placeholder {
+    font-size: 1em;
+  }
+  header nav .search-rect::placeholder {
+    font-size: 1em;
+  }
+  header nav .search-btn {
+    width: 4em;
+    height: 4em;
+  }
+  header nav .search-svg {
+    height: 3em;
+    width: 3em;
   }
   .hamburger-menu-icon {
     width: -webkit-fit-content;

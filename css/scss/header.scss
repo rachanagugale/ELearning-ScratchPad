@@ -28,45 +28,49 @@ header {
         width: 45%;
         justify-content: space-evenly;
         align-items: center;
-        z-index: 1;
+        z-index: 2;
 
         .search-input-container {
             display: flex;
             justify-content: space-around;
+            border-radius: 0.25rem;
         }
 
         .search-rect {
-            width: 8em;
+            order: 2;
+            width: 10em;
             height: 2em;
-            border-radius: 0.25 0 0 0.25em;
+            border-radius: 0 0.25rem 0.25rem 0;
             background-color: #DBDBDB;
             padding-left: 0.5em;
             border: none;
-            border-right: color('dark-grey') 1px solid;
+            // border-right: color('dark-grey') 1px solid;
             font-size: 1em;
+            color: #676767;
         }
 
 
         .search-rect:focus {
             outline: none;
             border-color: #9ecaed;
-            box-shadow: 0 0 10px #9ecaed;
+            box-shadow: 0 0 5px #9ecaed;
         }
         
         .search-rect::placeholder {
             color: color('dark-grey');
             font-size: 1em;
-            padding-left: 2em;
         }
 
         .search-btn {
+            order: 1;
             height: 2em;
             width: 2em;
-            background-color: #BBBBBB;
+            background-color: #DBDBDB;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0.5em;
+            border-radius: 0.25rem 0 0 0.25rem;
         }
 
         .search-btn:active {
@@ -74,8 +78,8 @@ header {
         }
 
         .search-svg {
-            height: 2em;
-            width: 2em;
+            height: 1.5em;
+            width: 1.5em;
         }
 
         .search-svg:hover {
@@ -101,14 +105,17 @@ header {
 }
 
 @media screen and (max-width: 950px) {
-
     body {
         overflow-x: hidden;
         font-size: 10px;
     }
 
     .top-container {
-        .corner-purple-blob, .corner-pink-blob {
+        .corner-purple-blob {
+            display: none;
+        }
+
+        .corner-pink-blob {
             display: none;
         }
     }
@@ -156,6 +163,26 @@ header {
                     color: white;
                     opacity: 0.8;;
                 }
+            }
+
+            .search-rect {
+                width: 10em;
+                height: 2em;
+                font-size: 2em;
+            }
+
+            .search-rect::placeholder {
+                font-size: 1em;
+            }
+
+            .search-btn {
+                width: 4em;
+                height: 4em;
+            }
+
+            .search-svg {
+                height: 3em;
+                width: 3em;
             }
         }
     }

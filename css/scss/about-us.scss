@@ -1,4 +1,4 @@
-@import 'common.scss', 'header.scss', 'footer.scss';
+@import 'common.scss', 'header.scss', 'instant-search.scss', 'footer.scss';
 
 body {
     background-color: color('background-ivory');
@@ -9,6 +9,7 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
+    height: 40em;
 }
 
 .top-container {
@@ -45,7 +46,8 @@ body {
         position: absolute;
         left: 0;
         z-index: -1;
-        margin-top: 15em;
+        margin-top: 13em;
+
         img {
             width: 120em;
         }    
@@ -57,7 +59,7 @@ body {
     text-align: left;
     padding: 2em;
     height: fit-content;
-    width: 35em;
+    max-width: 30em;
     margin-top: 8em;
     margin-left: 15em;
 
@@ -72,25 +74,27 @@ body {
 }
 
 .contact-bubble {
-    color: white;
+    color: color('background-ivory');
     margin-top: 17em;
     margin-right: 10em;
     height: fit-content;
-    width: 25em;
+    width: 30em;
+    position: relative;
 
     .contact-us-svg {
         width: 30em;
-        z-index: 0;
+        z-index: 1;
         position: absolute;
-        top: 15em;
+        top: -6em;
     }  
 
     .contact-us-content {
-        z-index: 2;
-        position: relative;
+        z-index: 1;
+        position: absolute;
         display: flex;
         flex-direction: column;
         margin-left: 7em;
+        top: 0;
     
         h2 {
             font-size: 1.2em;
@@ -120,44 +124,54 @@ body {
 }
 
 .footer-container {
+    margin: 0;
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 @media screen and (max-width: 950px) {
     body {
         font-size: 0.8em;
         overflow-y: scroll;
+        font-size: 10px;
     }
 
     .top-container .corner-pink-blob {
         display: none;
     }
 
-    .middle-container{
+    .page-container {
+        height: 60em;
+    }
+
+    .middle-container {
         flex-direction: column;
         align-items: center;
+        align-content: center;
 
         .pink-wave {
-            align-self: flex-end;
-            justify-self: flex-end;
-            bottom: 0;
+            display: none;
         }
     }
 
     .about-us-section {
         margin-left: 2em;
+        margin-top: 5em;
         font-size: 1.2em;
     }
 
     .contact-bubble {
         margin-top: 8em;
         margin-left: 10em;
+        // margin-left: 7em;
+        max-width: 30em;
+        margin-bottom: 15em;
 
         .contact-us-svg {
-            margin-top: 20em;
+            // margin-top: 20em;
+            max-width: 30em;
         }
     }
 
