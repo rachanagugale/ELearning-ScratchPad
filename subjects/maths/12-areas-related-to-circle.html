@@ -34,17 +34,18 @@
                 <a href="../../index.html">
 					<img id="logo-img" src="../../assets/header/Logo.svg" alt="Logo"></a>
             </div>
-            <nav>
-                <div class="search-container">
-                    <div class="search-input-container">
-                        <input class="search-rect" type="text" placeholder="Search">
-                        <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+             <nav>
+                    <div class="search-container" id="search-container">
+                        <div class="search-input-container">
+                            <input class="search-rect" type="text" placeholder="Search" id="searchbar" onkeyup="searchFunction()">
+                            <div class="search-btn"><img src="../../assets/header/search-icon.svg" alt="Search Icon" class="search-svg" onclick=""></div>
+                        </div>
+                        <div class="search-results-container" id="search-results-container">
+                        </div>
                     </div>
-                    <div class="search-results-container"></div>
-                </div>
-                <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
-                <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
-            </nav>
+                    <div class="navbar-link"> <a href="../../subjects.html">Subjects</a></div>
+                    <div class="navbar-link"><a href="../../about-us.html">About Us</a></div>
+                </nav>
             <div class="hamburger-menu-icon"><img src="../../assets/header/hamburger-menu.svg" alt=""></div>
         </header>
 	</div>
